@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ========================================================================================================================================== NAV ===== -->
+    <div class="layout">
+      <nav class="sidebar">
+        <div class="sidebar-main">
+          <a href="../index.html" class="nav-item home">
+            <img src="../images/Logo.png" alt="Logo" />
+            <span class="nav-label">Home</span>
+          </a>
+
+          <a href="phonology.html" class="nav-item">
+            <i class="fa-solid fa-microphone"></i>
+            <span class="nav-label">Phonology</span>
+          </a>
+
+          <a href="grammar.html" class="nav-item">
+            <i class="fa-solid fa-cube"></i>
+            <span class="nav-label">Grammar</span>
+          </a>
+
+          <a href="morphology.html" class="nav-item">
+            <i class="fa-solid fa-ellipsis"></i>
+            <span class="nav-label">Morphology</span>
+          </a>
+
+          <a href="syntax.html" class="nav-item">
+            <i class="fa-solid fa-list-ol"></i>
+            <span class="nav-label">Syntax</span>
+          </a>
+
+          <a href="evolution.html" class="nav-item">
+            <i class="fa-solid fa-timeline"></i>
+            <span class="nav-label">Evolution</span>
+          </a>
+
+          <a href="phrases.html" class="nav-item">
+            <i class="fa-solid fa-comment-dots"></i>
+            <span class="nav-label">Phrases</span>
+          </a>
+
+          <a href="dictionary.html" class="nav-item">
+            <i class="fa-solid fa-book-atlas"></i>
+            <span class="nav-label">Dictionary</span>
+          </a>
+
+          <a href="sentences.html" class="nav-item">
+            <i class="fa-solid fa-align-center"></i>
+            <span class="nav-label">Sentences</span>
+          </a>
+
+          <a href="testpage.html" class="nav-item">
+            <i class="">TP</i>
+            <span class="nav-label">Testpage</span>
+          </a>
+        </div>
+
+        <!-- ========================= SUB NAV ========================= -->
+
+        <button class="btn-nav-lock" title="Sidebar mode">
+          <i class="fa-solid fa-lock-open"></i>
+        </button>
+      </nav>
+
+      <div class="page-settings">
+        <button
+          class="btn btn-main btn-settings"
+          style="background-color: #ffc745"
+        >
+          Save
+        </button>
+
+        <div class="mode-toggle" data-state="down">
+          <button class="btn-nav-toggle">
+            <!-- <i class="fa-solid fa-angle-up"></i> -->
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+      </div>
+
+      <main class="page-content">
+        <!-- ================================================================================================================================= MAIN-CONTENT ===== -->
+        <h1>Settings</h1>
+        <p class="p-info">Page description here.</p>
+
+        <!-- ============================================================================================================== CHAPTER 1 - language settings ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Language settings</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========================= CHAP-CONTENT ========================= -->
+          <div class="chap-content">
+            <p class="p-info">
+              Create languages here. Select a language to activate or deactivate
+              it.
+            </p>
+
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <!-- ========== CHAP IAT ========== -->
+
+              <div class="chap-iat">
+                <p class="p-iat-title">Languages</p>
+
+                <div
+                  class="iat-options opt-multi"
+                  data-path="languages"
+                  data-option-type="language"
+                >
+                  <!-- <button class="btn btn-opt btn-select user-created" data-language-id="language-123">Language 1</button> -->
+
+                  <div class="inputfield-icon" style="display: none">
+                    <button class="btn-icon btn btn-add">+</button>
+
+                    <input
+                      type="text"
+                      class="iat-inputfield opt-inputfield"
+                      placeholder="Add option..."
+                    />
+                  </div>
+
+                  <button class="btn btn-edit btn-opt">⚙</button>
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================================================================================== CHAPTER 2 - stage settings ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>State settings</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========================= CHAP-CONTENT ========================= -->
+          <div class="chap-content">
+            <p class="p-info">
+              Create and edit stages for each language. These stages are
+              different versions of your langauge, spoken in different periods.
+              There will always be a 'modern' stage. With two or more stages,
+              one will always be considered the proto stage.
+            </p>
+
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <div class="chap-iat">
+                <p class="p-iat-title">Select language to edit</p>
+
+                <div
+                  class="iat-options opt-single"
+                  id="stage-language-selector"
+                >
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="chap-sub">
+              <h3>Stages</h3>
+              <!-- ========== CHAP IAT ========== -->
+
+              <p class="p-info" id="no-language-selected-message">
+                Select a language to edit its stages.
+              </p>
+
+              <div class="stage-editor-content" style="display: none">
+                <div class="chap-iat">
+                  <p class="p-iat-title">Outer title <br /><br /></p>
+
+                  <div class="iat-order ord-apply">
+                    <p class="p-info">Inner title:</p>
+
+                    <div class="iat-options opt-multi ord-available">
+                      <p class="p-info">Available:</p>
+
+                      <div
+                        class="inputfield-icon option-text-add"
+                        style="display: none"
+                      >
+                        <button class="btn-icon btn btn-add-text">+</button>
+                        <input
+                          type="text"
+                          class="iat-inputfield opt-inputfield"
+                          placeholder="Add option..."
+                        />
+                      </div>
+
+                      <button class="btn btn-edit btn-opt">⚙</button>
+                      <button class="btn btn-close btn-opt">&lt;</button>
+                    </div>
+
+                    <div class="ord-used">
+                      <p class="p-info">Used:</p>
+                      <button
+                        class="btn btn-opt btn-select p-used user-created"
+                        data-stage-id="stage-123"
+                      >
+                        Modern
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================================================================================ CHAPTER 3 - website settings ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Website settings</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========================= CHAP-CONTENT ========================= -->
+          <div class="chap-content">
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <h3>Save</h3>
+              <!-- ========== CHAP IAT ========== -->
+
+              <div class="chap-iat">
+                <p class="p-iat-title">Select location on decive</p>
+
+                <div class="iat-input inp-popup">
+                  <div class="inputfield-icon">
+                    <button class="btn-icon btn">
+                      <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <input
+                      type="text"
+                      class="iat-inputfield"
+                      value="Current location..."
+                      readonly
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="chap-sub">
+                <h3>View</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script src="../js/data-store.js"></script>
+        <script src="../js/nav.js"></script>
+        <script src="../js/iat.js"></script>
+        <script src="../js/feature-visibility.js"></script>
+      </main>
+    </div>
+  </body>
+</html>

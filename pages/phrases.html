@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- ========================================================================================================================================== NAV ===== -->
+  <div class="layout">
+    <nav class="sidebar">
+      <div class="sidebar-main">
+        <a href="../index.html" class="nav-item home">
+          <img src="../images/Logo.png" alt="Logo" />
+          <span class="nav-label">Home</span>
+        </a>
+
+        <a href="phonology.html" class="nav-item">
+          <i class="fa-solid fa-microphone"></i>
+          <span class="nav-label">Phonology</span>
+        </a>
+
+        <a href="grammar.html" class="nav-item">
+          <i class="fa-solid fa-cube"></i>
+          <span class="nav-label">Grammar</span>
+        </a>
+
+        <a href="morphology.html" class="nav-item">
+          <i class="fa-solid fa-ellipsis"></i>
+          <span class="nav-label">Morphology</span>
+        </a>
+
+        <a href="syntax.html" class="nav-item">
+          <i class="fa-solid fa-list-ol"></i>
+          <span class="nav-label">Syntax</span>
+        </a>
+
+        <a href="evolution.html" class="nav-item">
+          <i class="fa-solid fa-timeline"></i>
+          <span class="nav-label">Evolution</span>
+        </a>
+
+        <a href="phrases.html" class="nav-item">
+          <i class="fa-solid fa-comment-dots"></i>
+          <span class="nav-label">Phrases</span>
+        </a>
+
+        <a href="dictionary.html" class="nav-item">
+          <i class="fa-solid fa-book-atlas"></i>
+          <span class="nav-label">Dictionary</span>
+        </a>
+
+        <a href="sentences.html" class="nav-item">
+          <i class="fa-solid fa-align-center"></i>
+          <span class="nav-label">Sentences</span>
+        </a>
+
+
+
+        <a href="testpage.html" class="nav-item">
+          <i class="">TP</i>
+          <span class="nav-label">Testpage</span>
+        </a>
+      </div>
+
+      <!-- ========================= SUB NAV ========================= -->
+
+      <button class="btn-nav-lock" title="Sidebar mode">
+        <i class="fa-solid fa-lock-open"></i>
+      </button>
+    </nav>
+
+    <div class="page-settings">
+      <button class="btn btn-main btn-settings" style="background-color: #ffc745;">Save</button>
+
+      <button class="btn btn-main btn-settings btn-language-switch">Language A</button>
+      <button class="btn btn-main btn-settings btn-stage-switch">Modern</button>
+
+      <div class="mode-toggle" data-state="edit">
+        <button class="btn-nav-toggle">
+          <i class="fa-solid fa-pencil"></i>
+        </button>
+      </div>
+
+      <div class="mode-toggle" data-state="down">
+        <button class="btn-nav-toggle">
+          <!-- <i class="fa-solid fa-angle-up"></i> -->
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+      </div>
+
+      <div class="mode-toggle">
+        <a href="settings.html" class="nav-item">
+          <i class="fa-solid fa-gear"></i>
+          <span class="nav-label">Settings</span>
+        </a>
+      </div>
+    </div>
+
+    <main class="page-content">
+      <!-- ================================================================================================================================= MAIN-CONTENT ===== -->
+      <h1>Phrases</h1>
+      <p class="p-info">Page description here.</p>
+
+      <!-- ====================================================================================================================== CHAPTER 1 - Questions ===== -->
+      <div class="chap">
+        <div class="chap-title">
+          <h2>Questions</h2>
+          <div class="iat-input inp-note">
+            <button class="btn btn-note">
+              <i class="fa-regular fa-note-sticky"></i>
+            </button>
+
+            <div class="popup-overlay hidden">
+              <div class="popup-window note-popup">
+                <button class="btn btn-note-close">✕</button>
+
+                <h2 class="note-title"></h2>
+
+                <p class="p-info">Write your notes about chapter 1.</p>
+
+                <div class="note-toolbar">
+                  <button class="btn btn-note-tool btn-h3">h1</button>
+                  <button class="btn btn-note-tool btn-h4">h2</button>
+                  <button class="btn btn-note-tool btn-p">p</button>
+
+                  <button class="btn btn-note-tool btn-bold">
+                    <b>B</b>
+                  </button>
+                  <button class="btn btn-note-tool btn-italic">
+                    <i>I</i>
+                  </button>
+                  <button class="btn btn-note-tool btn-underline">
+                    <u>U</u>
+                  </button>
+                </div>
+
+                <div class="note-editor" contenteditable="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ========================= CHAP-CONTENT ========================= -->
+        <div class="chap-content">
+
+          <div class="chap-sub">
+            <h3>Yes/no questions</h3>
+
+            <div class="chap-iat-inner">
+              <div class="iat-options opt-multi">
+                <p class="p-info">Expressed by:</p>
+                <button class="btn btn-opt btn-select" data-group="phraseMorphology" data-value="Morphology">Morphology
+                  (verbal inflection)</button>
+                <button class="btn btn-opt btn-select" data-group="phraseWord" data-value="Question word">Question
+                  word</button>
+                <button class="btn btn-opt btn-select" data-group="phraseIntonation"
+                  data-value="Intonation change">Intonation
+                  change</button>
+                <button class="btn btn-opt btn-select" data-group="phraseWordOrder" data-value="Word order">Word
+                  order</button>
+
+                <button class="btn btn-close btn-opt">&lt;</button>
+              </div>
+            </div>
+
+            <div data-container="phraseMorphology"></div>
+            <div data-container="phraseWord"></div>
+            <div data-container="phraseIntonation"></div>
+            <div data-container="phraseWordOrder"></div>
+          </div>
+
+          <div class="chap-sub">
+            <h3>Wh-questions</h3>
+            <div class="chap-iat-inner">
+              <div class="iat-options opt-multi">
+                <p class="p-info">Expressed by:</p>
+                <button class="btn btn-opt btn-select" data-group="phraseMorphology" data-value="Morphology">Morphology
+                  (verbal inflection)</button>
+                <button class="btn btn-opt btn-select" data-group="phraseWord" data-value="Question word">Question
+                  word</button>
+                <button class="btn btn-opt btn-select" data-group="phraseIntonation"
+                  data-value="Intonation change">Intonation
+                  change</button>
+                <button class="btn btn-opt btn-select" data-group="phraseWordOrder" data-value="Word order">Word
+                  order</button>
+
+                <button class="btn btn-close btn-opt">&lt;</button>
+              </div>
+            </div>
+
+            <div data-container="phraseMorphology"></div>
+            <div data-container="phraseWord"></div>
+            <div data-container="phraseIntonation"></div>
+            <div data-container="phraseWordOrder"></div>
+
+
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- ====================================================================================================================== CHAPTER 2 - Negation ===== -->
+      <div class="chap">
+        <div class="chap-title">
+          <h2>Negation</h2>
+          <div class="iat-input inp-note">
+            <button class="btn btn-note">
+              <i class="fa-regular fa-note-sticky"></i>
+            </button>
+
+            <div class="popup-overlay hidden">
+              <div class="popup-window note-popup">
+                <button class="btn btn-note-close">✕</button>
+
+                <h2 class="note-title"></h2>
+
+                <p class="p-info">Write your notes about chapter 1.</p>
+
+                <div class="note-toolbar">
+                  <button class="btn btn-note-tool btn-h3">h1</button>
+                  <button class="btn btn-note-tool btn-h4">h2</button>
+                  <button class="btn btn-note-tool btn-p">p</button>
+
+                  <button class="btn btn-note-tool btn-bold">
+                    <b>B</b>
+                  </button>
+                  <button class="btn btn-note-tool btn-italic">
+                    <i>I</i>
+                  </button>
+                  <button class="btn btn-note-tool btn-underline">
+                    <u>U</u>
+                  </button>
+                </div>
+
+                <div class="note-editor" contenteditable="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ========================= CHAP-CONTENT ========================= -->
+        <div class="chap-content">
+
+          <div class="chap-sub">
+
+            <div class="chap-iat-inner">
+              <div class="iat-options opt-multi">
+                <p class="p-info">Expressed by:</p>
+                <button class="btn btn-opt btn-select" data-group="phraseMorphology" data-value="Morphology">Morphology
+                  (verbal inflection)</button>
+                <button class="btn btn-opt btn-select" data-group="phraseWord" data-value="Question word">Question
+                  word</button>
+                <button class="btn btn-opt btn-select" data-group="phraseIntonation"
+                  data-value="Intonation change">Intonation
+                  change</button>
+                <button class="btn btn-opt btn-select" data-group="phraseWordOrder" data-value="Word order">Word
+                  order</button>
+
+                <button class="btn btn-close btn-opt">&lt;</button>
+              </div>
+            </div>
+
+            <div data-container="phraseMorphology"></div>
+            <div data-container="phraseWord"></div>
+            <div data-container="phraseIntonation"></div>
+            <div data-container="phraseWordOrder"></div>
+
+            <div class="chap-iat">
+              <h4 class="p-iat-title" data-instance-title></h4>
+
+              <div class="iat-options opt-single">
+                <p class="p-info">Grammatical number used with negation:</p>
+                <button class="btn btn-opt btn-select">Singular
+                  marking</button>
+                <button class="btn btn-opt btn-select">Plural</button>
+
+                <button class="btn btn-close btn-opt">&lt;</button>
+              </div>
+
+
+              <div data-container="verbMarkingOn"></div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- ================================================================================================================ CHAPTER 3 - Clauses ===== -->
+      <div class="chap">
+        <div class="chap-title">
+          <h2>Clauses</h2>
+          <div class="iat-input inp-note">
+            <button class="btn btn-note">
+              <i class="fa-regular fa-note-sticky"></i>
+            </button>
+
+            <div class="popup-overlay hidden">
+              <div class="popup-window note-popup">
+                <button class="btn btn-note-close">✕</button>
+
+                <h2 class="note-title"></h2>
+
+                <p class="p-info">Write your notes about chapter 1.</p>
+
+                <div class="note-toolbar">
+                  <button class="btn btn-note-tool btn-h3">h1</button>
+                  <button class="btn btn-note-tool btn-h4">h2</button>
+                  <button class="btn btn-note-tool btn-p">p</button>
+
+                  <button class="btn btn-note-tool btn-bold">
+                    <b>B</b>
+                  </button>
+                  <button class="btn btn-note-tool btn-italic">
+                    <i>I</i>
+                  </button>
+                  <button class="btn btn-note-tool btn-underline">
+                    <u>U</u>
+                  </button>
+                </div>
+
+                <div class="note-editor" contenteditable="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ========================= CHAP-CONTENT ========================= -->
+        <div class="chap-content">
+          <div class="chap-sub">
+
+            <div class="chap-iat">
+              <p class="p-iat-title">Clauses:</p>
+              <div class="iat-options opt-multi  create-has-group" data-create-group="adverbialClause">
+                <button class="btn btn-opt btn-select" data-group="RelativeClauseModifies"
+                  data-value="Relative clause">Relative
+                  clause</button>
+                <button class="btn btn-opt btn-select" data-group="nounClauseModifies" data-value="Noun clause">Noun
+                  clause</button>
+                <button class="btn btn-opt btn-select" data-group="adverbialClause"
+                  data-value="Adverbial clause">Adverbial
+                  clause</button>
+
+                <div class="inputfield-icon" style="display: none">
+                  <button class="btn-icon btn btn-add">+</button>
+
+                  <input type="text" class="iat-inputfield opt-inputfield" placeholder="Add option..." />
+                </div>
+
+                <button class="btn btn-edit btn-opt">⚙</button>
+                <button class="btn btn-close btn-opt">&lt;</button>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div data-container="RelativeClauseModifies"></div>
+          <div data-container="nounClauseModifies"></div>
+          <div data-container="adverbialClause"></div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- ============================================================================================================= TEMPLATES - Clauses ===== -->
+
+        <!-- =a > c,d -->
+        <template data-template="RelativeClauseModifies">
+          <div data-instance>
+            <div class="chap-sub">
+              <h3 data-instance-title></h3>
+
+              <div class="chap-iat">
+                <p class="p-iat-title">Relativize:</p>
+                <div class="iat-options opt-multi">
+                  <button class="btn btn-opt btn-select" data-group="relativeClauseStrategy"
+                    data-value="Subject">Subject</button>
+                  <button class="btn btn-opt btn-select" data-group="relativeClauseStrategy"
+                    data-value="Object">Object</button>
+                  <button class="btn btn-opt btn-select" data-group="relativeClauseStrategy"
+                    data-value="Indirect object">Indirect
+                    object</button>
+                  <button class="btn btn-opt btn-select" data-group="relativeClauseStrategy"
+                    data-value="Oblique">Oblique</button>
+                  <button class="btn btn-opt btn-select" data-group="relativeClauseStrategy"
+                    data-value="Genitive">Genitive</button>
+                  <button class="btn btn-opt btn-select" data-group="relativeClauseStrategy"
+                    data-value="Object of comorative">Object of
+                    comorative</button>
+
+                  <div class="inputfield-icon" style="display: none">
+                    <button class="btn-icon btn btn-add">+</button>
+
+                    <input type="text" class="iat-inputfield opt-inputfield" placeholder="Add option..." />
+                  </div>
+
+                  <button class="btn btn-edit btn-opt">⚙</button>
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="relativeClauseStrategy"></div>
+
+            </div>
+          </div>
+        </template>
+
+        <template data-template="relativeClauseStrategy">
+          <div data-instance>
+            <h4 class="p-iat-title" data-instance-title></h4>
+            <div class="chap-iat">
+              <p class="p-iat-title">Placement:</p>
+              <div class="iat-options opt-single">
+                <button class="btn btn-opt btn-select" data-group="clauseReplaces" data-value="Internal">Internally
+                  headed
+                  clause</button>
+                <button class="btn btn-opt btn-select" data-group="clauseModifies" data-value="External">Externally
+                  headed
+                  clause</button>
+
+                <button class="btn btn-close btn-opt">&lt;</button>
+              </div>
+
+              <div data-container="clauseReplaces"></div>
+              <div data-container="clauseModifies"></div>
+            </div>
+
+            <div class="chap-iat">
+              <div class="iat-options opt-multi">
+                <p class="p-info">Strategy:</p>
+                <button class="btn btn-opt btn-select" data-group="noDataGroup" data-value="Gapping">Gapping (zero
+                  marking)</button>
+                <button class="btn btn-opt btn-select" data-group="phraseWord"
+                  data-value="Relative pronoun or complementizers">Clause introducer</button>
+                <button class="btn btn-opt btn-select" data-group="noDataGroup" data-value="Pronoun retention">Pronoun
+                  retention</button>
+                <button class="btn btn-opt btn-select" data-group="phraseMorphology" data-value="Morphology">Special
+                  verb (Morphology)</button>
+
+                <button class="btn btn-close btn-opt">&lt;</button>
+              </div>
+
+
+              <div data-container="phraseWord"></div>
+              <div data-container="phraseMorphology"></div>
+
+            </div>
+
+
+
+
+
+          </div>
+        </template>
+
+
+        <template data-template="nounClauseModifies">
+          <div data-instance>
+            <div class="chap-sub">
+              <h3 data-instance-title></h3>
+              <div class="chap-iat">
+                <p class="p-iat-title">Relativize:</p>
+                <div class="iat-options opt-multi">
+                  <button class="btn btn-opt btn-select" data-group="nounClauseStrategy"
+                    data-value="Subject">Subject</button>
+                  <button class="btn btn-opt btn-select" data-group="nounClauseStrategy"
+                    data-value="Object">Object</button>
+                  <button class="btn btn-opt btn-select" data-group="nounClauseStrategy"
+                    data-value="Indirect object">Indirect
+                    object</button>
+                  <button class="btn btn-opt btn-select" data-group="nounClauseStrategy"
+                    data-value="Oblique">Oblique</button>
+                  <button class="btn btn-opt btn-select" data-group="nounClauseStrategy"
+                    data-value="Genitive">Genitive</button>
+                  <button class="btn btn-opt btn-select" data-group="nounClauseStrategy"
+                    data-value="Object of comorative">Object of
+                    comorative</button>
+
+                  <div class="inputfield-icon" style="display: none">
+                    <button class="btn-icon btn btn-add">+</button>
+
+                    <input type="text" class="iat-inputfield opt-inputfield" placeholder="Add option..." />
+                  </div>
+
+                  <button class="btn btn-edit btn-opt">⚙</button>
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="nounClauseStrategy"></div>
+            </div>
+          </div>
+        </template>
+
+        <template data-template="nounClauseStrategy">
+          <div data-instance>
+
+            <div class="chap-iat">
+              <div class="iat-options opt-multi">
+                <p class="p-info">Strategy:</p>
+                <button class="btn btn-opt btn-select" data-group="noDataGroup" data-value="Gapping">Gapping (zero
+                  marking)</button>
+                <button class="btn btn-opt btn-select" data-group="phraseWord"
+                  data-value="Relative pronoun or complementizers">Clause introducer</button>
+                <button class="btn btn-opt btn-select" data-group="noDataGroup" data-value="Pronoun retention">Pronoun
+                  retention</button>
+                <button class="btn btn-opt btn-select" data-group="phraseMorphology" data-value="Morphology">Special
+                  verb (Morphology)</button>
+
+                <button class="btn btn-close btn-opt">&lt;</button>
+              </div>
+
+
+              <div data-container="phraseWord"></div>
+              <div data-container="phraseMorphology"></div>
+
+            </div>
+
+
+            <button class="btn btn-main" data-instance>The clause replaces the noun(phrase). Go to the syntax page to
+              change the internal order of the clause.</button>
+
+          </div>
+        </template>
+
+
+        <template data-template="adverbialClause">
+          <div data-instance>
+            <div class="chap-sub">
+              <h3 data-instance-title></h3>
+
+
+              <div class="chap-iat">
+                <div class="iat-options opt-multi">
+                  <p class="p-info">Strategy:</p>
+                  <button class="btn btn-opt btn-select" data-group="noDataGroup" data-value="Gapping">Gapping (zero
+                    marking)</button>
+                  <button class="btn btn-opt btn-select" data-group="phraseWord"
+                    data-value="Relative pronoun or complementizers">Clause introducer</button>
+                  <button class="btn btn-opt btn-select" data-group="noDataGroup" data-value="Pronoun retention">Pronoun
+                    retention</button>
+                  <button class="btn btn-opt btn-select" data-group="phraseMorphology" data-value="Morphology">Special
+                    verb (Morphology)</button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+
+
+                <div data-container="phraseWord"></div>
+                <div data-container="phraseMorphology"></div>
+
+              </div>
+
+              <button class="btn btn-main" data-instance>Go to the syntax page to chooce clause placement and internal
+                order.</button>
+
+            </div>
+          </div>
+        </template>
+
+
+
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ================================================================================================================= TEMPLATE - Noun agreement ===== -->
+  <template data-template="phraseMorphology">
+    <button class="btn btn-main" data-instance>Go to morphology page to specify further</button>
+  </template>
+
+
+  <template data-template="phraseWord">
+    <div data-instance>
+      <p>Add words from you dictionary here that may fullfull this purpose. Specify placement on the syntax page.
+      </p>
+      <div class="chap-iat">
+        <p class="p-iat-title">IAT Title: Popup Inputfield</p>
+
+        <div class="iat-input inp-popup">
+          <div class="inputfield-icon">
+            <button class="btn-icon btn">
+              <i class="fa-solid fa-pen"></i>
+            </button>
+            <input type="text" class="iat-inputfield" value="Selected value komt" readonly />
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template data-template="phraseIntonation">
+    <button class="btn btn-main" data-instance>Go to phonology page to specify further</button>
+  </template>
+
+  <template data-template="phraseWordOrder">
+    <button class="btn btn-main" data-instance>Go to syntax page to specify further</button>
+  </template>
+
+  <script src="../js/nav.js"></script>
+  <script src="../js/iat.js"></script>
+  <script src="../js/feature-visibility.js"></script>
+  </main>
+  </div>
+</body>
+
+</html>

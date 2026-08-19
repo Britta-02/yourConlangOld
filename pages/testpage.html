@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="layout">
+      <!-- ========================================================================================================================================== NAV ===== -->
+      <nav class="sidebar">
+        <div class="sidebar-main">
+          <a href="../index.html" class="nav-item home">
+            <img src="../images/Logo.png" alt="Logo" />
+            <span class="nav-label">Home</span>
+          </a>
+
+          <a href="phonology.html" class="nav-item">
+            <i class="fa-solid fa-microphone"></i>
+            <span class="nav-label">Phonology</span>
+          </a>
+
+          <a href="grammar.html" class="nav-item">
+            <i class="fa-solid fa-cube"></i>
+            <span class="nav-label">Grammar</span>
+          </a>
+
+          <a href="morphology.html" class="nav-item">
+            <i class="fa-solid fa-ellipsis"></i>
+            <span class="nav-label">Morphology</span>
+          </a>
+
+          <a href="syntax.html" class="nav-item">
+            <i class="fa-solid fa-list-ol"></i>
+            <span class="nav-label">Syntax</span>
+          </a>
+
+          <a href="evolution.html" class="nav-item">
+            <i class="fa-solid fa-timeline"></i>
+            <span class="nav-label">Evolution</span>
+          </a>
+
+          <a href="phrases.html" class="nav-item">
+            <i class="fa-solid fa-comment-dots"></i>
+            <span class="nav-label">Phrases</span>
+          </a>
+
+          <a href="dictionary.html" class="nav-item">
+            <i class="fa-solid fa-book-atlas"></i>
+            <span class="nav-label">Dictionary</span>
+          </a>
+
+          <a href="sentences.html" class="nav-item">
+            <i class="fa-solid fa-align-center"></i>
+            <span class="nav-label">Sentences</span>
+          </a>
+
+          <a href="testpage.html" class="nav-item">
+            <i class="">TP</i>
+            <span class="nav-label">Testpage</span>
+          </a>
+        </div>
+
+        <!-- ========================= SUB NAV ========================= -->
+
+        <button class="btn-nav-lock" title="Sidebar mode">
+          <i class="fa-solid fa-lock-open"></i>
+        </button>
+      </nav>
+
+      <div class="page-settings">
+        <button
+          class="btn btn-main btn-settings"
+          style="background-color: #ffc745"
+        >
+          Save
+        </button>
+
+        <button class="btn btn-main btn-settings btn-language-switch">
+          Language A
+        </button>
+        <button class="btn btn-main btn-settings btn-stage-switch">
+          Modern
+        </button>
+
+        <div class="mode-toggle" data-state="edit">
+          <button class="btn-nav-toggle">
+            <i class="fa-solid fa-pencil"></i>
+          </button>
+        </div>
+
+        <div class="mode-toggle" data-state="down">
+          <button class="btn-nav-toggle">
+            <!-- <i class="fa-solid fa-angle-up"></i> -->
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+
+        <div class="mode-toggle">
+          <a href="settings.html" class="nav-item">
+            <i class="fa-solid fa-gear"></i>
+            <span class="nav-label">Settings</span>
+          </a>
+        </div>
+      </div>
+
+      <main class="page-content">
+        <!-- ================================================================================================================================= MAIN-CONTENT ===== -->
+        <h1>Test page</h1>
+        <p class="p-info">Page description here.</p>
+
+        <!-- ===================================================================================================================== CHAPTER 1 - Buttons ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Buttons</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chap-content">
+            <p class="p-info">These are the basic buttons outside any iat.</p>
+            <button class="btn btn-main">Default Button</button>
+
+            <button class="btn btn-main btn-select">Selectable Button</button>
+          </div>
+        </div>
+
+        <!-- ===================================================================================================================== CHAPTER 2 - Iat-options ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Iat-options</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chap-content">
+            <p class="p-info">This are the different types of iat-options.</p>
+
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <h3>Opt-single</h3>
+
+              <!-- ========== CHAP IAT ========== -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Outer title</p>
+
+                <div class="iat-options opt-single">
+                  <p class="p-info">Inner title:</p>
+                  <button class="btn btn-opt btn-select">Option 1</button>
+                  <button class="btn btn-opt btn-select">Option 2</button>
+                  <button class="btn btn-opt btn-select">Option 3</button>
+                  <button class="btn btn-opt btn-select">Option 4</button>
+
+                  <div
+                    class="inputfield-icon option-text-add"
+                    style="display: none"
+                  >
+                    <button class="btn-icon btn btn-add-text">+</button>
+
+                    <input
+                      type="text"
+                      class="iat-inputfield opt-inputfield"
+                      placeholder="Add option..."
+                    />
+                  </div>
+
+                  <button class="btn btn-edit btn-opt">⚙</button>
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+            </div>
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <h3>Opt-multi</h3>
+
+              <!-- ========== CHAP IAT ========== -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Outer title</p>
+
+                <div class="iat-options opt-multi">
+                  <p class="p-info">Inner title:</p>
+                  <button class="btn btn-opt btn-select">Option 1</button>
+                  <button class="btn btn-opt btn-select">Option 2</button>
+                  <button class="btn btn-opt btn-select">Option 3</button>
+                  <button class="btn btn-opt btn-select">Option 4</button>
+
+                  <div
+                    class="inputfield-icon option-text-add"
+                    style="display: none"
+                  >
+                    <button class="btn-icon btn btn-add-text">+</button>
+
+                    <input
+                      type="text"
+                      class="iat-inputfield opt-inputfield"
+                      placeholder="Add option..."
+                    />
+                  </div>
+
+                  <button class="btn btn-edit btn-opt">⚙</button>
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================================================================================================================== CHAPTER 3 - Iat-input ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Iat-input</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chap-content">
+            <p class="p-info">This are the different types of iat-options.</p>
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <h3>Inp-text</h3>
+
+              <!-- ========== CHAP IAT ========== -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Outer title</p>
+                <div class="iat-input inp-text">
+                  <p class="p-info">Inner title:</p>
+                  <input
+                    type="text"
+                    class="iat-inputfield"
+                    placeholder="Enter text..."
+                    style="min-width: 7rem"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <h3>Inp-phoneme</h3>
+
+              <!-- ========== CHAP IAT ========== -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Outer title</p>
+
+                <div class="iat-input inp-phoneme">
+                  <p class="p-info">Inner title:</p>
+                  <div class="phoneme-wrap">
+                    <input type="text" class="iat-inputfield" placeholder="p" />
+                    <div class="phoneme-btn">
+                      <button class="btn-add btn btn-inp">+</button>
+                      <button class="btn btn-edit btn-inp">⚙</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <h3>Inp-rule</h3>
+
+              <!-- ========== CHAP IAT ========== -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Outer title</p>
+
+                <div class="iat-input inp-rule container-rules">
+                  <p class="p-info">Inner title:</p>
+
+                  <!-- rule 1 -->
+                  <div class="rule evoRule" id="template-1">
+                    <button class="btn-reorder btn btn-inp">↕</button>
+
+                    <input
+                      type="text"
+                      class="iat-inputfield cur-char rule-input"
+                      placeholder="Enter phonemes..."
+                    />
+                    <span class="p-rule-symbol">&gt;</span>
+                    <input
+                      type="text"
+                      class="iat-inputfield new-char rule-input"
+                      placeholder="Enter phonemes..."
+                    />
+                    <span class="p-rule-symbol">/</span>
+                    <input
+                      type="text"
+                      class="iat-inputfield bef-char rule-input"
+                      placeholder="Enter phonemes..."
+                    />
+                    <span class="p-rule-symbol">_</span>
+                    <input
+                      type="text"
+                      class="iat-inputfield aft-char rule-input"
+                      placeholder="Enter phonemes..."
+                    />
+                    <span class="p-rule-symbol">!</span>
+                    <input
+                      type="text"
+                      class="iat-inputfield unl-bef rule-input"
+                      placeholder="Enter phonemes..."
+                    />
+                    <span class="p-rule-symbol">_</span>
+                    <input
+                      type="text"
+                      class="iat-inputfield unl-aft rule-input"
+                      placeholder="Enter phonemes..."
+                    />
+                    <button class="btn-delete btn btn-inp">✕</button>
+                  </div>
+
+                  <!-- rule buttons -->
+                  <div class="rule-btn" style="padding-top: 0.5rem">
+                    <button class="btn btn-add btn-inp">+</button>
+                    <button class="btn btn-edit btn-inp">⚙</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <h3>Inp-info</h3>
+
+              <!-- ========== CHAP IAT ========== -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Outer title</p>
+
+                <div class="iat-input inp-info">
+                  <p class="p-info">Inner title:</p>
+                  <textarea
+                    class="iat-inputfield"
+                    placeholder="Enter note..."
+                    rows="1"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <h3>Inp-popup in opt-multi</h3>
+
+              <div class="chap-sub">
+                <h3>Opt-multi with popup add</h3>
+
+                <!-- ========== CHAP IAT ========== -->
+                <div class="chap-iat">
+                  <p class="p-iat-title">Outer title</p>
+
+                  <div class="iat-options opt-multi" data-popup-source="test">
+                    <p class="p-info">Inner title:</p>
+                    <button class="btn btn-opt btn-select">Option 1</button>
+                    <button class="btn btn-opt btn-select">Option 2</button>
+                    <button class="btn btn-opt btn-select">Option 3</button>
+                    <button class="btn btn-opt btn-select">Option 4</button>
+
+                    <div
+                      class="inputfield-icon option-popup-add"
+                      style="display: none"
+                    >
+                      <!-- <button class="btn-icon btn btn-add-text">+</button> -->
+                      <button class="btn-icon btn btn-add-popup">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+
+                      <!-- <input type="text" class="iat-inputfield opt-inputfield" placeholder="Add option..." /> -->
+                      <input
+                        type="text"
+                        class="iat-inputfield opt-inputfield"
+                        placeholder="Select value..."
+                        readonly
+                      />
+                    </div>
+
+                    <button class="btn btn-edit btn-opt">⚙</button>
+                    <button class="btn btn-close btn-opt">&lt;</button>
+                  </div>
+                </div>
+
+                <div class="chap-iat">
+                  <div class="iat-input inp-popup">
+                    <p class="p-info">Related words:</p>
+
+                    <div class="inputfield-icon">
+                      <button class="btn-icon btn btn-popup-open">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+
+                      <input
+                        class="iat-inputfield"
+                        readonly
+                        value="Selected values"
+                      />
+                    </div>
+
+                    <div class="popup-overlay hidden">
+                      <div class="popup-window card-popup">
+                        <button class="btn-popup-close">✕</button>
+
+                        <!-- search -->
+                        <div class="chap-iat">
+                          <div class="iat-input inp-text">
+                            <input
+                              class="iat-inputfield popup-search"
+                              placeholder="Search..."
+                            />
+                          </div>
+                        </div>
+
+                        <!-- options -->
+                        <div class="chap-iat">
+                          <div class="iat-options opt-multi popup-options">
+                            <!-- buttons generated here -->
+                          </div>
+                        </div>
+
+                        <button class="btn btn-popup-add">Add</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ========== CHAP IAT ========== -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Outer title</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================================================================================================================== CHAPTER 4 - Iat-order ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Iat-order</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========================= CHAP-CONTENT ========================= -->
+          <div class="chap-content">
+            <p class="p-info">
+              Iat-order can be applied in different ways.
+              <br /><br />adding options: <br />1. Without the ability to add
+              options. The data-popup-source, inputfield-icon, btn-edit and
+              btn-close buttons can be deleted. <br />2. With the ability to add
+              options using text-add. The data-popup-source, inputfield-icon,
+              btn-edit and btn-close buttons can be deleted and replaced by the
+              commented out code. <br />3. With the ability to add options using
+              popup-add. The data-popup-source, inputfield-icon, btn-edit and
+              btn-close buttons are needed and The comented out code can be
+              removed. <br /><br />lists: <br />4. With only the ord-available
+              list. The ord-used div must stay, but all buttons wihtin it can be
+              removed <br />5. With only the ord-used list. The whole
+              ord-available div can be deleted. <br />6. With botht the
+              ord-available and ord-used list. <br /><br />You can choose one of
+              the adding options options and you can choose one of the lists
+              options.
+            </p>
+
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <h3>Iat-order: available & used, iat-options</h3>
+
+              <!-- ========== CHAP IAT ========== -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Outer title <br /><br /></p>
+
+                <div class="iat-order ord-apply">
+                  <p class="p-info">Inner title:</p>
+
+                  <div
+                    class="iat-options opt-multi ord-available"
+                    data-popup-source="test"
+                  >
+                    <p class="p-info">Available:</p>
+                    <button class="btn btn-opt btn-select p-available">
+                      Option 1
+                    </button>
+                    <button class="btn btn-opt btn-select p-available">
+                      Option 2
+                    </button>
+                    <button class="btn btn-opt btn-select p-available">
+                      Option 3
+                    </button>
+                    <button class="btn btn-opt btn-select p-available">
+                      Option 4
+                    </button>
+
+                    <div
+                      class="inputfield-icon option-popup-add"
+                      style="display: none"
+                    >
+                      <button class="btn-icon btn btn-add-popup">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+                      <input
+                        type="text"
+                        class="iat-inputfield opt-inputfield"
+                        placeholder="Select value..."
+                        readonly
+                      />
+                    </div>
+
+                    <!-- <div class="inputfield-icon option-text-add" style="display: none">
+                    <button class="btn-icon btn btn-add-text">+</button>
+                    <input type="text" class="iat-inputfield opt-inputfield" placeholder="Add option..." />
+                  </div> -->
+
+                    <button class="btn btn-edit btn-opt">⚙</button>
+                    <button class="btn btn-close btn-opt">&lt;</button>
+                  </div>
+
+                  <div class="ord-used">
+                    <p class="p-info">Used:</p>
+                    <button
+                      class="btn btn-opt btn-select selected p-used"
+                      disabled
+                    >
+                      Option 5
+                    </button>
+                    <button
+                      class="btn btn-opt btn-select selected p-used"
+                      disabled
+                    >
+                      Option 6
+                    </button>
+                    <button
+                      class="btn btn-opt btn-select selected p-used"
+                      disabled
+                    >
+                      Option 7
+                    </button>
+                    <button
+                      class="btn btn-opt btn-select selected p-used"
+                      disabled
+                    >
+                      Option 8
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script src="../js/appData.js"></script>
+        <script src="../js/appState.js"></script>
+        <script src="../js/dataAccess.js"></script>
+        <script src="../js/languageStageSwitching.js"></script>
+
+        <script src="../js/nav.js"></script>
+        <script src="../js/iat.js"></script>
+        <script src="../js/feature-visibility.js"></script>
+        <script src="../js/evolution.js"></script>
+      </main>
+    </div>
+
+    <div id="selection-popup" class="popup-overlay hidden">
+      <div class="popup-window">
+        <button class="btn-popup-close">✕</button>
+
+        <div class="popup-content">
+          <div class="iat-options opt-multi popup-options"></div>
+        </div>
+
+        <button class="btn-popup-add">Add</button>
+      </div>
+    </div>
+  </body>
+</html>

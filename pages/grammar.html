@@ -1,0 +1,1945 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="layout">
+      <!-- ========================================================================================================================================= NAV ===== -->
+      <nav class="sidebar">
+        <div class="sidebar-main">
+          <a href="../index.html" class="nav-item home">
+            <img src="../images/Logo.png" alt="Logo" />
+            <span class="nav-label">Home</span>
+          </a>
+
+          <a href="phonology.html" class="nav-item">
+            <i class="fa-solid fa-microphone"></i>
+            <span class="nav-label">Phonology</span>
+          </a>
+
+          <a href="grammar.html" class="nav-item">
+            <i class="fa-solid fa-cube"></i>
+            <span class="nav-label">Grammar</span>
+          </a>
+
+          <a href="morphology.html" class="nav-item">
+            <i class="fa-solid fa-ellipsis"></i>
+            <span class="nav-label">Morphology</span>
+          </a>
+
+          <a href="syntax.html" class="nav-item">
+            <i class="fa-solid fa-list-ol"></i>
+            <span class="nav-label">Syntax</span>
+          </a>
+
+          <a href="evolution.html" class="nav-item">
+            <i class="fa-solid fa-timeline"></i>
+            <span class="nav-label">Evolution</span>
+          </a>
+
+          <a href="phrases.html" class="nav-item">
+            <i class="fa-solid fa-comment-dots"></i>
+            <span class="nav-label">Phrases</span>
+          </a>
+
+          <a href="dictionary.html" class="nav-item">
+            <i class="fa-solid fa-book-atlas"></i>
+            <span class="nav-label">Dictionary</span>
+          </a>
+
+          <a href="sentences.html" class="nav-item">
+            <i class="fa-solid fa-align-center"></i>
+            <span class="nav-label">Sentences</span>
+          </a>
+
+          <a href="testpage.html" class="nav-item">
+            <i class="">TP</i>
+            <span class="nav-label">Testpage</span>
+          </a>
+        </div>
+
+        <!-- ========================= SUB NAV ========================= -->
+
+        <button class="btn-nav-lock" title="Sidebar mode">
+          <i class="fa-solid fa-lock-open"></i>
+        </button>
+      </nav>
+
+      <div class="page-settings">
+        <button
+          class="btn btn-main btn-settings"
+          style="background-color: #ffc745"
+        >
+          Save
+        </button>
+
+        <button class="btn btn-main btn-settings btn-language-switch">
+          Language A
+        </button>
+        <button class="btn btn-main btn-settings btn-stage-switch">
+          Modern
+        </button>
+
+        <div class="mode-toggle" data-state="edit">
+          <button class="btn-nav-toggle">
+            <i class="fa-solid fa-pencil"></i>
+          </button>
+        </div>
+
+        <div class="mode-toggle" data-state="down">
+          <button class="btn-nav-toggle">
+            <!-- <i class="fa-solid fa-angle-up"></i> -->
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+
+        <div class="mode-toggle">
+          <a href="settings.html" class="nav-item">
+            <i class="fa-solid fa-gear"></i>
+            <span class="nav-label">Settings</span>
+          </a>
+        </div>
+      </div>
+
+      <main class="page-content">
+        <!-- ============================================================================================================================== MAIN-CONTENT ===== -->
+        <h1>Grammar</h1>
+        <p class="p-info">Page description here.</p>
+
+        <!-- ============================================================================================================ CHAPTER 1 - Nominal inflection ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Nominal inflection</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========================= CHAP-CONTENT ========================= -->
+          <div class="chap-content">
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <!-- ========== CHAP IAT ========== -->
+              <!-- iat 1 -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Use articles</p>
+                <div class="iat-options opt-single">
+                  <button class="btn btn-opt btn-select selected">Off</button>
+                  <button class="btn btn-opt btn-select">On</button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ========================= SUB CHAP - Grammatical number ========================= -->
+            <div class="chap-sub">
+              <h3>Grammatical number</h3>
+
+              <div class="chap-iat">
+                <p class="p-iat-title">Grammatical number</p>
+                <div class="iat-options opt-single">
+                  <button
+                    class="btn btn-opt btn-select selected"
+                    data-group="noDataGroup"
+                    data-value="numberOff"
+                  >
+                    Off
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="grammaticalNumberOn"
+                    data-value="numberOn"
+                  >
+                    On
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="grammaticalNumberOn"></div>
+            </div>
+
+            <!-- ========================= SUB CHAP - Grammaticl gender/ class ========================= -->
+            <div class="chap-sub">
+              <h3>Grammatical gender / noun class</h3>
+
+              <div class="chap-iat">
+                <p class="p-iat-title">Grammatical gender / noun case</p>
+                <div class="iat-options opt-single">
+                  <button
+                    class="btn btn-opt btn-select selected"
+                    data-group="noDataGroup"
+                  >
+                    Off
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="grammaticalGenderOn"
+                  >
+                    On
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="grammaticalGenderOn"></div>
+            </div>
+
+            <!-- ========================= SUB CHAP - Noun case ========================= -->
+            <div class="chap-sub">
+              <h3>Noun case</h3>
+
+              <div class="chap-iat">
+                <p class="p-iat-title">Morphosyntactic alignment type:</p>
+                <div class="iat-options opt-single">
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="alignmentNeutral"
+                    data-value="Neutral"
+                  >
+                    Neutral
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="alignmentAccusative"
+                    data-value="Accusative"
+                  >
+                    Accusative
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="alignmentErgative"
+                    data-value="Ergative"
+                  >
+                    Ergative
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="alignmentTransitive"
+                    data-value="Transitive"
+                  >
+                    Transitive
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="alignmentActive"
+                    data-value="Active"
+                  >
+                    Active
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="alignmentTripartite"
+                    data-value="Tripartite"
+                  >
+                    Tripartite
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="alignmentNeutral"></div>
+              <div data-container="alignmentAccusative"></div>
+              <div data-container="alignmentErgative"></div>
+              <div data-container="alignmentTransitive"></div>
+              <div data-container="alignmentActive"></div>
+              <div data-container="alignmentTripartite"></div>
+
+              <h4>Indirect object</h4>
+              <div class="chap-iat">
+                <div class="iat-options opt-single">
+                  <p class="p-info">Strategy:</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="noDataGroup"
+                  >
+                    Zero marking
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarkingOn"
+                    data-value="marking"
+                  >
+                    Marking
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarkingOn"></div>
+
+              <h4>Possession</h4>
+              <div class="chap-iat">
+                <p class="p-iat-title">Possessor:</p>
+                <div class="iat-options opt-single">
+                  <p class="p-info">Strategy:</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="noDataGroup"
+                  >
+                    Zero marking
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarkingOn"
+                    data-value="marking"
+                  >
+                    Marking
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarkingOn"></div>
+
+              <div class="chap-iat">
+                <p class="p-iat-title">Possessed:</p>
+                <div class="iat-options opt-single">
+                  <p class="p-info">Strategy:</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="noDataGroup"
+                  >
+                    Zero marking
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarkingOn"
+                    data-value="marking"
+                  >
+                    Marking
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarkingOn"></div>
+
+              <h4>More non-local cases</h4>
+              <div class="chap-iat">
+                <p class="p-iat-title">Non local cases used</p>
+                <div class="iat-options opt-multi">
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Instrumental case"
+                  >
+                    Instrumental
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Comitative case"
+                  >
+                    Comitative
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Benefactive case"
+                  >
+                    Benefactive
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Vocative case"
+                  >
+                    Vocative
+                  </button>
+
+                  <div class="inputfield-icon" style="display: none">
+                    <button class="btn-icon btn btn-add">+</button>
+
+                    <input
+                      type="text"
+                      class="iat-inputfield opt-inputfield"
+                      placeholder="Add option..."
+                    />
+                  </div>
+
+                  <button class="btn btn-edit btn-opt">⚙</button>
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarking"></div>
+
+              <h4>Local cases</h4>
+              <div class="chap-iat">
+                <p class="p-iat-title">Local cases used used</p>
+                <div class="iat-options opt-multi">
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Locative case"
+                  >
+                    Locative
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Adessive case"
+                  >
+                    Adessive
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Allative case"
+                  >
+                    Allative
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Ablative case"
+                  >
+                    Ablative
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Inessive case"
+                  >
+                    Inessive
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Illative case"
+                  >
+                    Illative
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Elative case"
+                  >
+                    Elative
+                  </button>
+
+                  <div class="inputfield-icon" style="display: none">
+                    <button class="btn-icon btn btn-add">+</button>
+
+                    <input
+                      type="text"
+                      class="iat-inputfield opt-inputfield"
+                      placeholder="Add option..."
+                    />
+                  </div>
+
+                  <button class="btn btn-edit btn-opt">⚙</button>
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarking"></div>
+            </div>
+          </div>
+
+          <!-- =========================================================================================================== TEMPLATES - Grammatical number ===== -->
+          <template data-template="grammaticalNumberOn">
+            <div data-instance>
+              <div class="chap-iat">
+                <p class="p-iat-title">Nominal numbers used</p>
+                <div class="iat-options opt-multi">
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Singular"
+                  >
+                    Singular
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Plural"
+                  >
+                    Plural
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Dual"
+                  >
+                    Dual
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Trial"
+                  >
+                    Trial
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Paucal"
+                  >
+                    Paucal
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Collective"
+                  >
+                    Collective
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Singulative"
+                  >
+                    Singulative
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Distributive"
+                  >
+                    Distributive
+                  </button>
+
+                  <div class="inputfield-icon" style="display: none">
+                    <button class="btn-icon btn btn-add">+</button>
+
+                    <input
+                      type="text"
+                      class="iat-inputfield opt-inputfield"
+                      placeholder="Add option..."
+                    />
+                  </div>
+
+                  <button class="btn btn-edit btn-opt">⚙</button>
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarking"></div>
+            </div>
+          </template>
+
+          <!-- =========================================================================================================== TEMPLATES - Grammatical gender===== -->
+          <template data-template="grammaticalGenderOn">
+            <div data-instance>
+              <div class="chap-iat">
+                <p class="p-iat-title">Noun classes or gender used</p>
+                <div class="iat-options opt-multi">
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Singular"
+                  >
+                    male
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Plural"
+                  >
+                    female
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarking"
+                    data-value="Dual"
+                  >
+                    neutral
+                  </button>
+
+                  <div class="inputfield-icon" style="display: none">
+                    <button class="btn-icon btn btn-add">+</button>
+
+                    <input
+                      type="text"
+                      class="iat-inputfield opt-inputfield"
+                      placeholder="Add option..."
+                    />
+                  </div>
+
+                  <button class="btn btn-edit btn-opt">⚙</button>
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarking"></div>
+            </div>
+          </template>
+
+          <!-- ================================================================================================================== TEMPLATES - Noun cases ===== -->
+          <template data-template="alignmentNeutral">
+            <div data-instance>
+              <div class="chap-iat">
+                <h4>Neutral case</h4>
+                <div class="iat-options opt-single">
+                  <p class="p-info">S/A/P:</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="noDataGroup"
+                  >
+                    Zero marking
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarkingOn"
+                    data-value="marking"
+                  >
+                    Marking
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+              <div data-container="agreeMarkingOn"></div>
+            </div>
+          </template>
+
+          <template data-template="alignmentAccusative">
+            <div data-instance>
+              <div class="chap-iat">
+                <h4>Nominative case</h4>
+                <div class="iat-options opt-single">
+                  <p class="p-info">S/A:</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="noDataGroup"
+                  >
+                    Zero marking
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarkingOn"
+                    data-value="marking"
+                  >
+                    Marking
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarkingOn"></div>
+
+              <div class="chap-iat">
+                <h4>Accusative case</h4>
+                <div class="iat-options opt-single">
+                  <p class="p-info">P:</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="noDataGroup"
+                  >
+                    Zero marking
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarkingOn"
+                    data-value="marking"
+                  >
+                    Marking
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarkingOn"></div>
+            </div>
+          </template>
+
+          <template data-template="alignmentErgative">
+            <div data-instance>
+              <div class="chap-iat">
+                <h4>Ergative case</h4>
+                <div class="iat-options opt-single">
+                  <p class="p-info">A:</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="noDataGroup"
+                  >
+                    Zero marking
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarkingOn"
+                    data-value="marking"
+                  >
+                    Marking
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarkingOn"></div>
+
+              <div class="chap-iat">
+                <h4>Absolutive case</h4>
+                <div class="iat-options opt-single">
+                  <p class="p-info">S/P:</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="noDataGroup"
+                  >
+                    Zero marking
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarkingOn"
+                    data-value="marking"
+                  >
+                    Marking
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarkingOn"></div>
+            </div>
+          </template>
+
+          <template data-template="alignmentTransitive">
+            <div data-instance>
+              <div class="chap-iat">
+                <h4>Transitive case</h4>
+                <div class="iat-options opt-single">
+                  <p class="p-info">A/P:</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="noDataGroup"
+                  >
+                    Zero marking
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarkingOn"
+                    data-value="marking"
+                  >
+                    Marking
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarkingOn"></div>
+
+              <div class="chap-iat">
+                <h4>Intransitive case</h4>
+                <div class="iat-options opt-single">
+                  <p class="p-info">S:</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="noDataGroup"
+                  >
+                    Zero marking
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarkingOn"
+                    data-value="marking"
+                  >
+                    Marking
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarkingOn"></div>
+            </div>
+          </template>
+
+          <template data-template="alignmentActive">
+            <div data-instance>
+              <div class="chap-iat">
+                <h4>Active case</h4>
+                <div class="iat-options opt-single">
+                  <p class="p-info">S<small>a</small>A:</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="noDataGroup"
+                  >
+                    Zero marking
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarkingOn"
+                    data-value="marking"
+                  >
+                    Marking
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarkingOn"></div>
+
+              <div class="chap-iat">
+                <h4>Inactive case</h4>
+                <div class="iat-options opt-single">
+                  <p class="p-info">S<small>p</small>P:</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="noDataGroup"
+                  >
+                    Zero marking
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarkingOn"
+                    data-value="marking"
+                  >
+                    Marking
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarkingOn"></div>
+            </div>
+          </template>
+
+          <template data-template="alignmentTripartite">
+            <div data-instance>
+              <div class="chap-iat">
+                <h4>Intransitive case</h4>
+                <div class="iat-options opt-single">
+                  <p class="p-info">S:</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="noDataGroup"
+                  >
+                    Zero marking
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarkingOn"
+                    data-value="marking"
+                  >
+                    Marking
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarkingOn"></div>
+
+              <div class="chap-iat">
+                <h4>Ergative case</h4>
+                <div class="iat-options opt-single">
+                  <p class="p-info">A:</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="noDataGroup"
+                  >
+                    Zero marking
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarkingOn"
+                    data-value="marking"
+                  >
+                    Marking
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarkingOn"></div>
+
+              <div class="chap-iat">
+                <h4>Accusative case</h4>
+                <div class="iat-options opt-single">
+                  <p class="p-info">P:</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="noDataGroup"
+                  >
+                    Zero marking
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="agreeMarkingOn"
+                    data-value="marking"
+                  >
+                    Marking
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="agreeMarkingOn"></div>
+            </div>
+          </template>
+        </div>
+
+        <!-- ============================================================================================================== CHAPTER 2 - Verbal agreement ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Verbal agreement</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========================= CHAP-CONTENT ========================= -->
+          <div class="chap-content">
+            <p>
+              Decide here if verbal agreement will be used and if so, what verbs
+              will agree with and weither you use agreement (mandatory) or
+              marking (optional). To clariy which nominal featrures verbs should
+              agree with, create noun inflections on the morphology page and
+              select verb. <br /><br />
+              Other parts of speech, such as pronoun and adjectives, this can be
+              added by selecting them on the moprhology page as well.
+            </p>
+
+            <div class="chap-sub">
+              <div class="chap-iat">
+                <p class="p-iat-title">
+                  Decide if verbs display agreement or marking with any of the
+                  noun types below.
+                </p>
+                <div class="iat-options opt-single">
+                  <p class="p-info">Subject</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbalAgreementMarking"
+                    data-value="Agreement"
+                  >
+                    -agreement
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbalAgreementMarking"
+                    data-value="Marking"
+                  >
+                    -marking
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="noDataGroup"
+                  >
+                    neither
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+
+                <div data-container="verbalAgreementMarking"></div>
+
+                <div class="chap-iat-inner">
+                  <div class="iat-options opt-single">
+                    <p class="p-info">Object</p>
+                    <button
+                      class="btn btn-opt btn-select"
+                      data-group="verbalAgreementMarking"
+                      data-value="Agreement"
+                    >
+                      -agreement
+                    </button>
+                    <button
+                      class="btn btn-opt btn-select"
+                      data-group="verbalAgreementMarking"
+                      data-value="Marking"
+                    >
+                      -marking
+                    </button>
+                    <button
+                      class="btn btn-opt btn-select"
+                      data-group="noDataGroup"
+                      data-value="noDataValue"
+                    >
+                      neither
+                    </button>
+
+                    <button class="btn btn-close btn-opt">&lt;</button>
+                  </div>
+
+                  <div data-container="verbalAgreementMarking"></div>
+                </div>
+
+                <div class="chap-iat-inner">
+                  <div class="iat-options opt-single">
+                    <p class="p-info">Inidrect object</p>
+                    <button
+                      class="btn btn-opt btn-select"
+                      data-group="verbalAgreementMarking"
+                      data-value="Agreement"
+                    >
+                      -agreement
+                    </button>
+                    <button
+                      class="btn btn-opt btn-select"
+                      data-group="verbalAgreementMarking"
+                      data-value="Marking"
+                    >
+                      -marking
+                    </button>
+                    <button
+                      class="btn btn-opt btn-select"
+                      data-group="noDataGroup"
+                      data-value="noDataValue"
+                    >
+                      neither
+                    </button>
+
+                    <button class="btn btn-close btn-opt">&lt;</button>
+                  </div>
+
+                  <div data-container="verbalAgreementMarking"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- =========================================================================================================== TEMPLATES - Verbal agreement noun types ===== -->
+          <template data-template="verbalAgreementMarking">
+            <div data-instance>
+              <div class="chap-iat-inner">
+                <div class="iat-options opt-single">
+                  <p class="p-info">Strategy:</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="noDataGroup"
+                  >
+                    Zero marking
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbalAgreementMarkingOn"
+                    data-value="marking"
+                  >
+                    Marking
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+              <div data-container="verbalAgreementMarkingOn"></div>
+            </div>
+          </template>
+
+          <template data-template="verbalAgreementMarkingOn">
+            <div data-instance>
+              <div class="chap-iat-inner">
+                <div class="iat-options opt-multi">
+                  <p class="p-info">Expressed by:</p>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbalAgreementMarkingMorphology"
+                    data-value="Morphology"
+                  >
+                    Morphology
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbalAgreementMarkingSyntax"
+                    data-value="Syntax"
+                  >
+                    Syntax
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="verbalAgreementMarkingMorphology"></div>
+
+              <div data-container="verbalAgreementMarkingSyntax"></div>
+            </div>
+          </template>
+
+          <template data-template="verbalAgreementMarkingMorphology">
+            <button class="btn btn-main" data-instance>
+              Go to morphology page to specify further
+            </button>
+          </template>
+
+          <template data-template="verbalAgreementMarkingSyntax">
+            <div data-instance>
+              <div class="chap-iat-inner" data-instance>
+                <div class="iat-options opt-multi">
+                  <p class="p-info">Syntax strategy:</p>
+
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbalAgreementMarkingSyntaxParticle"
+                    data-value="Particle"
+                  >
+                    Particle
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbalAgreementMarkingSyntaxWordorder"
+                    data-value="Worder order"
+                  >
+                    Word order
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="verbalAgreementMarkingSyntaxWordorder"></div>
+              <div data-container="verbalAgreementMarkingSyntaxParticle"></div>
+            </div>
+          </template>
+
+          <template data-template="verbalAgreementMarkingSyntaxParticle">
+            <div class="chap-iat" data-instance>
+              <div class="iat-input inp-text">
+                <p class="p-info">Particle:</p>
+                <input
+                  type="text"
+                  class="iat-inputfield"
+                  placeholder="Enter text..."
+                  style="min-width: 7rem"
+                />
+              </div>
+            </div>
+          </template>
+
+          <template data-template="verbalAgreementMarkingSyntaxWordorder">
+            <button class="btn btn-main" data-instance>
+              Go to syntax page to specifiy word order
+            </button>
+          </template>
+        </div>
+
+        <!-- =========================================================================================================== CHAPTER 3 - Tense, Aspect, Mood ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Tense, Aspect, Mood</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========================= CHAP-CONTENT ========================= -->
+          <div class="chap-content">
+            <div class="chap-sub">
+              <h3>Tense</h3>
+
+              <div class="chap-iat">
+                <div class="iat-options opt-single">
+                  <button
+                    class="btn btn-opt btn-select selected"
+                    data-group="noDataGroup"
+                    data-value="tenseOff"
+                  >
+                    Off
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="tenseOn"
+                    data-value="tenseOn"
+                  >
+                    On
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="tenseOn"></div>
+            </div>
+
+            <div class="chap-sub">
+              <h3>Aspect</h3>
+
+              <div class="chap-iat">
+                <div class="iat-options opt-single">
+                  <button
+                    class="btn btn-opt btn-select selected"
+                    data-group="noDataGroup"
+                    data-value="aspectOff"
+                  >
+                    Off
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="aspectOn"
+                    data-value="aspectOn"
+                  >
+                    On
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="aspectOn"></div>
+            </div>
+
+            <div class="chap-sub">
+              <h3>Mood</h3>
+
+              <div class="chap-iat">
+                <div class="iat-options opt-single">
+                  <button
+                    class="btn btn-opt btn-select selected"
+                    data-group="noDataGroup"
+                    data-value="moodOff"
+                  >
+                    Off
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="moodOn"
+                    data-value="moodOn"
+                  >
+                    On
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="moodOn"></div>
+            </div>
+          </div>
+
+          <!-- =========================================================================================================== TEMPLATES - Grammatical Tense ===== -->
+          <template data-template="tenseOn">
+            <div data-instance>
+              <div class="chap-iat">
+                <p class="p-iat-title">Tenses used</p>
+                <div class="iat-options opt-multi">
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Past"
+                  >
+                    Past
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Non-past"
+                  >
+                    Non-past
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Perfect"
+                  >
+                    Present
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Habitual"
+                  >
+                    Non-future
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Future"
+                  >
+                    Future
+                  </button>
+
+                  <div class="inputfield-icon" style="display: none">
+                    <button class="btn-icon btn btn-add">+</button>
+
+                    <input
+                      type="text"
+                      class="iat-inputfield opt-inputfield"
+                      placeholder="Add option..."
+                    />
+                  </div>
+
+                  <button class="btn btn-edit btn-opt">⚙</button>
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="verbMarking"></div>
+            </div>
+          </template>
+
+          <template data-template="aspectOn">
+            <div data-instance>
+              <div class="chap-iat">
+                <p class="p-iat-title">Aspect used</p>
+                <div class="iat-options opt-multi">
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Perfect"
+                  >
+                    Perfect
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Perfective"
+                  >
+                    Perfective
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Imperfective"
+                  >
+                    Imperfective
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Habitual"
+                  >
+                    Habitual
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Continuous"
+                  >
+                    Continuous
+                  </button>
+
+                  <div class="inputfield-icon" style="display: none">
+                    <button class="btn-icon btn btn-add">+</button>
+
+                    <input
+                      type="text"
+                      class="iat-inputfield opt-inputfield"
+                      placeholder="Add option..."
+                    />
+                  </div>
+
+                  <button class="btn btn-edit btn-opt">⚙</button>
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="verbMarking"></div>
+            </div>
+          </template>
+
+          <template data-template="moodOn">
+            <div data-instance>
+              <div class="chap-iat">
+                <p class="p-iat-title">Moods used</p>
+                <div class="iat-options opt-multi">
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Indicative"
+                  >
+                    Indicative
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Imperative"
+                  >
+                    Imperative
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Conditional"
+                  >
+                    Conditional
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Subjunctive"
+                  >
+                    Subjunctive
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Optative"
+                  >
+                    Optative
+                  </button>
+
+                  <div class="inputfield-icon" style="display: none">
+                    <button class="btn-icon btn btn-add">+</button>
+
+                    <input
+                      type="text"
+                      class="iat-inputfield opt-inputfield"
+                      placeholder="Add option..."
+                    />
+                  </div>
+
+                  <button class="btn btn-edit btn-opt">⚙</button>
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="verbMarking"></div>
+            </div>
+          </template>
+        </div>
+
+        <!-- ======================================================================================================================= CHAPTER 4 - Valency ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Valency</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========================= CHAP-CONTENT ========================= -->
+          <div class="chap-content">
+            <div class="chap-sub">
+              <div class="chap-sub">
+                <div class="chap-iat">
+                  <p class="p-iat-title">Valency changing strategies</p>
+                  <div class="iat-options opt-single">
+                    <button
+                      class="btn btn-opt btn-select selected"
+                      data-group="noDataGroup"
+                      data-value="ValencyOff"
+                    >
+                      Off
+                    </button>
+                    <button
+                      class="btn btn-opt btn-select"
+                      data-group="ValencyOn"
+                      data-value="ValencyOn"
+                    >
+                      On
+                    </button>
+
+                    <button class="btn btn-close btn-opt">&lt;</button>
+                  </div>
+                </div>
+
+                <div data-container="ValencyOn"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================================================================================== TEMPLATES - Valency ===== -->
+          <template data-template="ValencyOn">
+            <div data-instance>
+              <div class="chap-iat">
+                <p class="p-iat-title">Valency changing strategies:</p>
+                <div class="iat-options opt-multi">
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Passive"
+                  >
+                    Passive
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Causative"
+                  >
+                    Causative
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Applicative"
+                  >
+                    Applicative
+                  </button>
+
+                  <div class="inputfield-icon" style="display: none">
+                    <button class="btn-icon btn btn-add">+</button>
+
+                    <input
+                      type="text"
+                      class="iat-inputfield opt-inputfield"
+                      placeholder="Add option..."
+                    />
+                  </div>
+
+                  <button class="btn btn-edit btn-opt">⚙</button>
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="verbMarking"></div>
+            </div>
+          </template>
+        </div>
+
+        <!-- ==================================================================================================================== CHAPTER 5 - Derivation ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Derivation</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========================= CHAP-CONTENT ========================= -->
+          <div class="chap-content">
+            <div class="chap-sub">
+              <div class="chap-sub">
+                <div class="chap-iat">
+                  <p class="p-iat-title">Derivation</p>
+                  <div class="iat-options opt-single">
+                    <button
+                      class="btn btn-opt btn-select selected"
+                      data-group="noDataGroup"
+                      data-value="DerivationyOff"
+                    >
+                      Off
+                    </button>
+                    <button
+                      class="btn btn-opt btn-select"
+                      data-group="DerivationOn"
+                      data-value="DerivationOn"
+                    >
+                      On
+                    </button>
+
+                    <button class="btn btn-close btn-opt">&lt;</button>
+                  </div>
+                </div>
+
+                <div data-container="DerivationOn"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================================================================================================================== TEMPLATES - Derivation ===== -->
+          <template data-template="DerivationOn">
+            <div data-instance>
+              <div class="chap-iat">
+                <p class="p-iat-title">Derivation strategies:</p>
+                <div class="iat-options opt-multi">
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Verb > Performer"
+                  >
+                    Verb > performer
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Causative"
+                  >
+                    Causative
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="verbMarking"
+                    data-value="Applicative"
+                  >
+                    Applicative
+                  </button>
+
+                  <div class="inputfield-icon" style="display: none">
+                    <button class="btn-icon btn btn-add">+</button>
+
+                    <input
+                      type="text"
+                      class="iat-inputfield opt-inputfield"
+                      placeholder="Add option..."
+                    />
+                  </div>
+
+                  <button class="btn btn-edit btn-opt">⚙</button>
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="verbMarking"></div>
+            </div>
+          </template>
+        </div>
+
+        <!-- ============================================================================================================== TEMPLATE - Noun no-agreement ===== -->
+        <template data-template="noAgreeMarking">
+          <div data-instance>
+            <div class="chap-iat">
+              <h4 class="p-iat-title" data-instance-title></h4>
+
+              <div class="iat-options opt-single">
+                <p class="p-info">Strategy:</p>
+                <button
+                  class="btn btn-opt btn-select"
+                  data-group="noDataGroup"
+                  data-value="Zero marking"
+                >
+                  Zero marking
+                </button>
+                <button
+                  class="btn btn-opt btn-select"
+                  data-group="noAgreeMarkingOn"
+                  data-value="Marking"
+                >
+                  Marking
+                </button>
+
+                <button class="btn btn-close btn-opt">&lt;</button>
+              </div>
+
+              <div data-container="noAgreeMarkingOn"></div>
+            </div>
+          </div>
+        </template>
+        <template data-template="noAgreeMarkingOn">
+          <div data-instance>
+            <div class="chap-iat-inner">
+              <div class="iat-options opt-multi">
+                <p class="p-info">Expressed by:</p>
+                <button
+                  class="btn btn-opt btn-select"
+                  data-group="noAgreeMorphology"
+                  data-value="Morphology"
+                >
+                  Morphology
+                </button>
+                <button
+                  class="btn btn-opt btn-select"
+                  data-group="noAgreeParticle"
+                  data-value="Particle"
+                >
+                  Particle
+                </button>
+
+                <button class="btn btn-close btn-opt">&lt;</button>
+              </div>
+            </div>
+
+            <div data-container="noAgreeMorphology"></div>
+
+            <div data-container="noAgreeParticle"></div>
+          </div>
+        </template>
+        <template data-template="noAgreeMorphology">
+          <button class="btn btn-main" data-instance>
+            Go to morphology page to specify further
+          </button>
+        </template>
+        <template data-template="noAgreeParticle">
+          <button class="btn btn-main" data-instance>
+            Go to syntax page to specify further
+          </button>
+        </template>
+
+        <!-- ================================================================================================================= TEMPLATE - Noun agreement ===== -->
+        <template data-template="agreeMarking">
+          <div data-instance>
+            <div class="chap-iat">
+              <h4 class="p-iat-title" data-instance-title></h4>
+
+              <div class="iat-options opt-single">
+                <p class="p-info">Strategy:</p>
+                <button
+                  class="btn btn-opt btn-select"
+                  data-group="noDataGroup"
+                  data-value="Zero marking"
+                >
+                  Zero marking
+                </button>
+                <button
+                  class="btn btn-opt btn-select"
+                  data-group="agreeMarkingOn"
+                  data-value="Marking"
+                >
+                  Marking
+                </button>
+
+                <button class="btn btn-close btn-opt">&lt;</button>
+              </div>
+
+              <div data-container="agreeMarkingOn"></div>
+            </div>
+          </div>
+        </template>
+        <template data-template="agreeMarkingOn">
+          <div data-instance>
+            <div class="chap-iat-inner">
+              <div class="iat-options opt-multi">
+                <p class="p-info">Expressed by:</p>
+                <button
+                  class="btn btn-opt btn-select"
+                  data-group="agreeMorphology"
+                  data-value="Morphology"
+                >
+                  Morphology
+                </button>
+                <button
+                  class="btn btn-opt btn-select"
+                  data-group="agreeParticle"
+                  data-value="Particle"
+                >
+                  Particle
+                </button>
+
+                <button class="btn btn-close btn-opt">&lt;</button>
+              </div>
+            </div>
+
+            <div data-container="agreeMorphology"></div>
+
+            <div data-container="agreeParticle"></div>
+          </div>
+        </template>
+        <template data-template="agreeMorphology">
+          <button class="btn btn-main" data-instance>
+            Go to morphology page to specify further
+          </button>
+        </template>
+        <template data-template="agreeParticle">
+          <button class="btn btn-main" data-instance>
+            Go to syntax page to specify further
+          </button>
+        </template>
+
+        <!-- ================================================================================================================= TEMPLATE - Verb agreement ===== -->
+        <template data-template="verbMarking">
+          <div data-instance>
+            <div class="chap-iat">
+              <h4 class="p-iat-title" data-instance-title></h4>
+
+              <div class="iat-options opt-single">
+                <p class="p-info">Strategy:</p>
+                <button
+                  class="btn btn-opt btn-select"
+                  data-group="noDataGroup"
+                  data-value="Zero marking"
+                >
+                  Zero marking
+                </button>
+                <button
+                  class="btn btn-opt btn-select"
+                  data-group="verbMarkingOn"
+                  data-value="Marking"
+                >
+                  Marking
+                </button>
+
+                <button class="btn btn-close btn-opt">&lt;</button>
+              </div>
+
+              <div data-container="verbMarkingOn"></div>
+            </div>
+          </div>
+        </template>
+        <template data-template="verbMarkingOn">
+          <div data-instance>
+            <div class="chap-iat-inner">
+              <div class="iat-options opt-multi">
+                <p class="p-info">Expressed by:</p>
+                <button
+                  class="btn btn-opt btn-select"
+                  data-group="verbMorphology"
+                  data-value="Morphology"
+                >
+                  Morphology
+                </button>
+                <button
+                  class="btn btn-opt btn-select"
+                  data-group="verbAuxiliary"
+                  data-value="Auxiliary"
+                >
+                  Auxiliary
+                </button>
+
+                <button class="btn btn-close btn-opt">&lt;</button>
+              </div>
+            </div>
+
+            <div data-container="verbMorphology"></div>
+
+            <div data-container="verbAuxiliary"></div>
+          </div>
+        </template>
+        <template data-template="verbMorphology">
+          <button class="btn btn-main" data-instance>
+            Go to morphology page to specify further
+          </button>
+        </template>
+        <template data-template="verbAuxiliary">
+          <button class="btn btn-main" data-instance>
+            Go to syntax page to specify further
+          </button>
+        </template>
+
+        <script src="../js/nav.js"></script>
+        <script src="../js/iat.js"></script>
+        <script src="../js/feature-visibility.js"></script>
+      </main>
+    </div>
+  </body>
+</html>

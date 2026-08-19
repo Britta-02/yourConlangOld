@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ========================================================================================================================================== NAV ===== -->
+    <div class="layout">
+      <nav class="sidebar">
+        <div class="sidebar-main">
+          <a href="../index.html" class="nav-item home">
+            <img src="../images/Logo.png" alt="Logo" />
+            <span class="nav-label">Home</span>
+          </a>
+
+          <a href="phonology.html" class="nav-item">
+            <i class="fa-solid fa-microphone"></i>
+            <span class="nav-label">Phonology</span>
+          </a>
+
+          <a href="grammar.html" class="nav-item">
+            <i class="fa-solid fa-cube"></i>
+            <span class="nav-label">Grammar</span>
+          </a>
+
+          <a href="morphology.html" class="nav-item">
+            <i class="fa-solid fa-ellipsis"></i>
+            <span class="nav-label">Morphology</span>
+          </a>
+
+          <a href="syntax.html" class="nav-item">
+            <i class="fa-solid fa-list-ol"></i>
+            <span class="nav-label">Syntax</span>
+          </a>
+
+          <a href="evolution.html" class="nav-item">
+            <i class="fa-solid fa-timeline"></i>
+            <span class="nav-label">Evolution</span>
+          </a>
+
+          <a href="phrases.html" class="nav-item">
+            <i class="fa-solid fa-comment-dots"></i>
+            <span class="nav-label">Phrases</span>
+          </a>
+
+          <a href="dictionary.html" class="nav-item">
+            <i class="fa-solid fa-book-atlas"></i>
+            <span class="nav-label">Dictionary</span>
+          </a>
+
+          <a href="sentences.html" class="nav-item">
+            <i class="fa-solid fa-align-center"></i>
+            <span class="nav-label">Sentences</span>
+          </a>
+
+          <a href="testpage.html" class="nav-item">
+            <i class="">TP</i>
+            <span class="nav-label">Testpage</span>
+          </a>
+        </div>
+
+        <!-- ========================= SUB NAV ========================= -->
+
+        <button class="btn-nav-lock" title="Sidebar mode">
+          <i class="fa-solid fa-lock-open"></i>
+        </button>
+      </nav>
+
+      <div class="page-settings">
+        <button
+          class="btn btn-main btn-settings"
+          style="background-color: #ffc745"
+        >
+          Save
+        </button>
+
+        <button class="btn btn-main btn-settings btn-language-switch">
+          Language A
+        </button>
+        <button class="btn btn-main btn-settings btn-stage-switch">
+          Modern
+        </button>
+
+        <div class="mode-toggle" data-state="edit">
+          <button class="btn-nav-toggle">
+            <i class="fa-solid fa-pencil"></i>
+          </button>
+        </div>
+
+        <div class="mode-toggle" data-state="down">
+          <button class="btn-nav-toggle">
+            <!-- <i class="fa-solid fa-angle-up"></i> -->
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+
+        <div class="mode-toggle">
+          <a href="settings.html" class="nav-item">
+            <i class="fa-solid fa-gear"></i>
+            <span class="nav-label">Settings</span>
+          </a>
+        </div>
+      </div>
+
+      <main class="page-content">
+        <!-- ================================================================================================================================= MAIN-CONTENT ===== -->
+        <h1>Dictionary</h1>
+        <p class="p-info">Page description here.</p>
+
+        <!-- ===================================================================================================================== CHAPTER 1 - Settings ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Dictionary settings</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========================= CHAP-CONTENT ========================= -->
+          <div class="chap-content">
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <!-- ========== CHAP IAT ========== -->
+              <div class="chap-iat">
+                <div class="iat-options opt-single">
+                  <p class="p-info">Focus word:</p>
+                  <button class="btn btn-opt btn-select">Proto</button>
+                  <button class="btn btn-opt btn-select">Modern</button>
+                  <button class="btn btn-opt btn-select">Translation</button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <!-- ========== CHAP IAT ========== -->
+              <div class="chap-iat-inner">
+                <div class="iat-options opt-single">
+                  <p class="p-info">Order based on:</p>
+                  <button class="btn btn-opt btn-select">Proto word</button>
+                  <button class="btn btn-opt btn-select">Modern word</button>
+                  <button class="btn btn-opt btn-select">Translation</button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <!-- ========== CHAP IAT ========== -->
+              <div class="chap-iat-inner">
+                <div class="iat-options opt-single">
+                  <p class="p-info">Grouping:</p>
+                  <button class="btn btn-opt btn-select">Off</button>
+                  <button class="btn btn-opt btn-select">On</button>
+                  <button class="btn btn-opt btn-select">Only stars</button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <!-- ========== CHAP IAT ========== -->
+              <div class="chap-iat-inner">
+                <div class="iat-options opt-multi">
+                  <p class="p-info">Show on cards:</p>
+                  <button class="btn btn-opt btn-select">Modern word</button>
+                  <button class="btn btn-opt btn-select">Proto word</button>
+                  <button class="btn btn-opt btn-select">Translation</button>
+                  <button class="btn btn-opt btn-select">Definition</button>
+                  <button class="btn btn-opt btn-select">Part of speech</button>
+                  <button class="btn btn-opt btn-select">Gender</button>
+                  <button class="btn btn-opt btn-select">Noun type</button>
+                  <button class="btn btn-opt btn-select">Used for</button>
+                  <button class="btn btn-opt btn-select">Related words</button>
+                  <button class="btn btn-opt btn-select">Note</button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div class="chap-iat">
+                <p class="p-iat-title">
+                  Search your modern words, proto words, translation or meaning.
+                </p>
+                <div class="iat-input inp-text">
+                  <p class="p-info">Inner title:</p>
+                  <input
+                    type="text"
+                    class="iat-inputfield"
+                    placeholder="Search..."
+                    style="min-width: 7rem"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================================================================================================================== CHAPTER 2 - Words ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Dictionary words</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========================= CHAP-CONTENT ========================= -->
+          <div class="chap-content">
+            <p>
+              All your words are shown below according to the dictionary
+              settings you have chosen above. You can edit the words, add new
+              words, or delete words. You can also search for words using the
+              search bar.
+            </p>
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <div class="iat-cards car-words">
+                <div class="card-controls">
+                  <button class="btn-add btn btn-inp">+</button>
+                  <button class="btn-edit btn btn-inp">⚙</button>
+                </div>
+
+                <div class="cards-list"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================================================================================================================== Template Word cards ===== -->
+        <template id="word-card-template">
+          <div class="word-card">
+            <button class="btn-card-word"></button>
+
+            <div class="card-body" style="min-height: 2rem"></div>
+
+            <div class="popup-overlay hidden">
+              <div class="popup-window card-popup">
+                <button class="btn-card-close">✕</button>
+                <div class="card-columns">
+                  <div class="card-column">
+                    <!-- ========== CHAP IAT ========== -->
+                    <div class="chap-iat">
+                      <div class="iat-input inp-text">
+                        <input
+                          type="text"
+                          class="iat-inputfield"
+                          placeholder="Modern word..."
+                          style="min-width: 7rem"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="chap-iat">
+                      <div class="iat-input inp-text">
+                        <input
+                          type="text"
+                          class="iat-inputfield"
+                          placeholder="Proto word..."
+                          style="min-width: 7rem"
+                        />
+                      </div>
+                    </div>
+                    <div class="chap-iat">
+                      <div class="iat-input inp-text">
+                        <input
+                          type="text"
+                          class="iat-inputfield"
+                          placeholder="Written word..."
+                          style="min-width: 7rem"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="chap-iat">
+                      <div class="iat-input inp-text">
+                        <input
+                          type="text"
+                          class="iat-inputfield"
+                          placeholder="Translated word..."
+                          style="min-width: 7rem"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="chap-iat">
+                      <p class="p-iat-title">Outer title</p>
+
+                      <div class="iat-input inp-info">
+                        <p class="p-info">Inner title:</p>
+                        <textarea
+                          class="iat-inputfield"
+                          placeholder="Meaning..."
+                          rows="1"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-column">
+                    <div class="chap-iat">
+                      <div class="iat-options opt-multi">
+                        <p class="p-info">Part of speech:</p>
+                        <button class="btn btn-opt btn-select">Verb</button>
+                        <button class="btn btn-opt btn-select">
+                          Auxiliary
+                        </button>
+                        <button class="btn btn-opt btn-select">Noun</button>
+                        <button class="btn btn-opt btn-select">
+                          Adjective
+                        </button>
+                        <button class="btn btn-opt btn-select">Adverb</button>
+                        <button class="btn btn-opt btn-select">Pronoun</button>
+                        <button class="btn btn-opt btn-select">
+                          Preposition
+                        </button>
+                        <button class="btn btn-opt btn-select">Particle</button>
+
+                        <div class="inputfield-icon" style="display: none">
+                          <button class="btn-icon btn btn-add">+</button>
+
+                          <input
+                            type="text"
+                            class="iat-inputfield opt-inputfield"
+                            placeholder="Add option..."
+                          />
+                        </div>
+
+                        <button class="btn btn-edit btn-opt">⚙</button>
+                        <button class="btn btn-close btn-opt">&lt;</button>
+                      </div>
+                    </div>
+
+                    <div class="chap-iat">
+                      <div class="iat-options opt-multi">
+                        <p class="p-info">Gender:</p>
+                        <button class="btn btn-opt btn-select">Male</button>
+                        <button class="btn btn-opt btn-select">Female</button>
+                        <button class="btn btn-opt btn-select">Neutral</button>
+
+                        <button class="btn btn-close btn-opt">&lt;</button>
+                      </div>
+                    </div>
+
+                    <div class="chap-iat">
+                      <div class="iat-options opt-multi">
+                        <p class="p-info">Type of noun:</p>
+                        <button class="btn btn-opt btn-select">
+                          Count noun
+                        </button>
+                        <button class="btn btn-opt btn-select">
+                          Mass noun
+                        </button>
+                        <button class="btn btn-opt btn-select">Definite</button>
+                        <button class="btn btn-opt btn-select">
+                          Indefinite
+                        </button>
+                        <button class="btn btn-opt btn-select">Animate</button>
+                        <button class="btn btn-opt btn-select">
+                          Inanimate
+                        </button>
+                        <button class="btn btn-opt btn-select">common</button>
+                        <button class="btn btn-opt btn-select">Proper</button>
+
+                        <button class="btn btn-close btn-opt">&lt;</button>
+                      </div>
+                    </div>
+
+                    <div class="chap-iat">
+                      <div class="iat-input inp-text">
+                        <p class="p-info">Used for:</p>
+                        <input
+                          type="text"
+                          class="iat-inputfield"
+                          placeholder="Input..."
+                          style="min-width: 7rem"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="chap-iat">
+                      <div class="iat-input inp-popup">
+                        <p class="p-info">Related words:</p>
+                        <div class="inputfield-icon">
+                          <button class="btn-icon btn">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <input
+                            type="text"
+                            class="iat-inputfield"
+                            value="Selected value komt"
+                            readonly
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="chap-iat">
+                      <div class="iat-input inp-info">
+                        <p class="p-info">Inner title:</p>
+                        <textarea
+                          class="iat-inputfield"
+                          placeholder="Your notes..."
+                          rows="1"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
+
+        <script src="../js/nav.js"></script>
+        <script src="../js/iat.js"></script>
+        <script src="../js/feature-visibility.js"></script>
+        <script src="../js/evolution.js"></script>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1070 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ========================================================================================================================================== NAV ===== -->
+    <div class="layout">
+      <nav class="sidebar">
+        <div class="sidebar-main">
+          <a href="../index.html" class="nav-item home">
+            <img src="../images/Logo.png" alt="Logo" />
+            <span class="nav-label">Home</span>
+          </a>
+
+          <a href="phonology.html" class="nav-item">
+            <i class="fa-solid fa-microphone"></i>
+            <span class="nav-label">Phonology</span>
+          </a>
+
+          <a href="grammar.html" class="nav-item">
+            <i class="fa-solid fa-cube"></i>
+            <span class="nav-label">Grammar</span>
+          </a>
+
+          <a href="morphology.html" class="nav-item">
+            <i class="fa-solid fa-ellipsis"></i>
+            <span class="nav-label">Morphology</span>
+          </a>
+
+          <a href="syntax.html" class="nav-item">
+            <i class="fa-solid fa-list-ol"></i>
+            <span class="nav-label">Syntax</span>
+          </a>
+
+          <a href="evolution.html" class="nav-item">
+            <i class="fa-solid fa-timeline"></i>
+            <span class="nav-label">Evolution</span>
+          </a>
+
+          <a href="phrases.html" class="nav-item">
+            <i class="fa-solid fa-comment-dots"></i>
+            <span class="nav-label">Phrases</span>
+          </a>
+
+          <a href="dictionary.html" class="nav-item">
+            <i class="fa-solid fa-book-atlas"></i>
+            <span class="nav-label">Dictionary</span>
+          </a>
+
+          <a href="sentences.html" class="nav-item">
+            <i class="fa-solid fa-align-center"></i>
+            <span class="nav-label">Sentences</span>
+          </a>
+
+          <a href="testpage.html" class="nav-item">
+            <i class="">TP</i>
+            <span class="nav-label">Testpage</span>
+          </a>
+        </div>
+
+        <!-- ========================= SUB NAV ========================= -->
+
+        <button class="btn-nav-lock" title="Sidebar mode">
+          <i class="fa-solid fa-lock-open"></i>
+        </button>
+      </nav>
+
+      <div class="page-settings">
+        <button
+          class="btn btn-main btn-settings"
+          style="background-color: #ffc745"
+          data-action="save-project"
+        >
+          Save
+        </button>
+
+        <button
+          class="btn btn-main btn-settings save-project-button"
+          style="background-color: #ffc745"
+          data-action="save-project"
+        >
+          Save
+        </button>
+
+        <button class="btn btn-main btn-settings btn-language-switch">
+          Language A
+        </button>
+        <button class="btn btn-main btn-settings btn-stage-switch">
+          Modern
+        </button>
+
+        <div class="mode-toggle" data-state="edit">
+          <button class="btn-nav-toggle">
+            <i class="fa-solid fa-pencil"></i>
+          </button>
+        </div>
+
+        <div class="mode-toggle" data-state="down">
+          <button class="btn-nav-toggle">
+            <!-- <i class="fa-solid fa-angle-up"></i> -->
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+
+        <div class="mode-toggle">
+          <a href="settings.html" class="nav-item">
+            <i class="fa-solid fa-gear"></i>
+            <span class="nav-label">Settings</span>
+          </a>
+        </div>
+      </div>
+
+      <main class="page-content">
+        <!-- ================================================================================================================================= MAIN-CONTENT ===== -->
+        <h1>Phonology</h1>
+        <p class="p-info">Page description here.</p>
+
+        <!-- ===================================================================================================================== CHAPTER 1 - sound system ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Sound system</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chap-content">
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <!-- ========== CHAP IAT ========== -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Consonants</p>
+
+                <div
+                  class="iat-input inp-phoneme"
+                  data-path="phonology.phonemes.consonants"
+                >
+                  <div class="phoneme-wrap">
+                    <input type="text" class="iat-inputfield" placeholder="p" />
+                    <div class="phoneme-btn">
+                      <button class="btn-add btn btn-inp">+</button>
+                      <button class="btn btn-edit btn-inp">⚙</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ========== CHAP IAT ========== -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Vowels</p>
+
+                <div
+                  class="iat-input inp-phoneme"
+                  data-path="phonology.phonemes.vowels"
+                >
+                  <div class="phoneme-wrap">
+                    <input type="text" class="iat-inputfield" placeholder="p" />
+                    <div class="phoneme-btn">
+                      <button class="btn-add btn btn-inp">+</button>
+                      <button class="btn btn-edit btn-inp">⚙</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <h3>Minimal pairs</h3>
+              <p class="p-info">
+                All phonemes mentioned above form minimal pairs. To make any
+                exceptions, add phonemes to the "Exceptions" list below.
+              </p>
+
+              <!-- ========== CHAP IAT ========== -->
+              <div
+                class="iat-input inp-rule"
+                data-path="phonology.phonemes.minimalPairs"
+              >
+                <!-- rule 1 -->
+                <div class="rule">
+                  <button class="btn-reorder btn btn-inp">↕</button>
+
+                  <input
+                    type="text"
+                    class="iat-inputfield"
+                    data-field="source"
+                    placeholder="Enter phonemes..."
+                  />
+                  <span class="p-rule-symbol">&</span>
+                  <input
+                    type="text"
+                    class="iat-inputfield"
+                    data-field="target"
+                    placeholder="Enter phonemes..."
+                  />
+                  <button class="btn-delete btn btn-inp">✕</button>
+                </div>
+
+                <!-- rule buttons -->
+                <div class="rule-btn" style="padding-top: 0.5rem">
+                  <button class="btn-add btn btn-inp">+</button>
+                  <button class="btn btn-edit btn-inp">⚙</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================================================================================================================== CHAPTER 2 - syllables ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Syllables</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chap-content">
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <!-- ========== CHAP IAT ========== -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Onset</p>
+                <div
+                  class="iat-options opt-single"
+                  data-path="phonology.syllables.onsetState"
+                >
+                  <button class="btn btn-opt btn-select" data-value="mandatory">
+                    Mandatory
+                  </button>
+                  <button class="btn btn-opt btn-select" data-value="optional">
+                    Optional
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <!-- ========== CHAP IAT ========== -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Coda</p>
+                <div
+                  class="iat-options opt-single"
+                  data-path="phonology.syllables.codaState"
+                >
+                  <button class="btn btn-opt btn-select" data-value="allowed">
+                    Allowed
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-value="prohibited"
+                  >
+                    Prohibited
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ========================= SUB CHAP - Exceptions ========================= -->
+            <div class="chap-sub">
+              <h3>Exceptions</h3>
+              <p class="p-info">
+                If there are any exceptions to which phonemes can be used in
+                which syllable positions, add them here.
+              </p>
+
+              <!-- ========================================================= FEATURE SELECTOR (STATE INPUT) ========================================================== -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Places where exceptions occur</p>
+
+                <div
+                  class="iat-options opt-multi"
+                  data-path="phonology.syllables.syllableExceptions"
+                >
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="syllableStructure"
+                    data-value="onsetInitial"
+                  >
+                    Onset, word initial
+                  </button>
+
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="syllableStructure"
+                    data-value="onsetGeneral"
+                  >
+                    Onset, general
+                  </button>
+
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="syllableStructure"
+                    data-value="nucleusInitial"
+                  >
+                    Nucleus, initial
+                  </button>
+
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="syllableStructure"
+                    data-value="nucleusGeneral"
+                  >
+                    Nucleus, general
+                  </button>
+
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="syllableStructure"
+                    data-value="nucleusFinal"
+                  >
+                    Nucleus, final
+                  </button>
+
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="syllableStructure"
+                    data-value="codaGeneral"
+                  >
+                    Coda, general
+                  </button>
+
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="syllableStructure"
+                    data-value="codaFinal"
+                  >
+                    Coda, word final
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <!-- =========================================================
+       FEATURE INSTANCE CONTAINER (Strategy B OUTPUT)
+  ========================================================== -->
+              <div data-container="syllableStructure"></div>
+            </div>
+
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <h3>Specific rules</h3>
+              <p class="p-warning">
+                Do not use this part if you make use of a proto-language.
+              </p>
+              <p class="p-info">
+                Decide where phonems are not allowed. <br />Please note that any
+                rules created below will <b>not</b> be allowed in your language.
+                For example:
+                <br />
+                a ! V_V means the a is not allowed between two vowels.
+              </p>
+
+              <!-- ========== CHAP IAT ========== -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Excepions to phoneme placement</p>
+                <div
+                  class="iat-input inp-rule"
+                  data-path="phonology.syllables.phonemeExceptions.rules"
+                >
+                  <!-- rule 1 -->
+                  <div class="rule">
+                    <button class="btn-reorder btn btn-inp">↕</button>
+
+                    <input
+                      type="text"
+                      class="iat-inputfield"
+                      data-field="source"
+                      placeholder="Enter phonemes..."
+                    />
+
+                    <span class="p-rule-symbol">!</span>
+                    <input
+                      type="text"
+                      class="iat-inputfield"
+                      data-field="unless.before"
+                      placeholder="Enter phonemes..."
+                    />
+                    <span class="p-rule-symbol">_</span>
+                    <input
+                      type="text"
+                      class="iat-inputfield"
+                      data-field="unless.after"
+                      placeholder="Enter phonemes..."
+                    />
+                    <button class="btn-delete btn btn-inp">✕</button>
+                  </div>
+
+                  <!-- rule buttons -->
+                  <div class="rule-btn" style="padding-top: 0.5rem">
+                    <button class="btn-add btn btn-inp">+</button>
+                    <button class="btn btn-edit btn-inp">⚙</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========  TEMPLATE  ========== -->
+          <template data-template="syllableStructure">
+            <div class="chap-iat" data-instance>
+              <p class="p-iat-title" data-instance-title></p>
+
+              <div class="iat-input inp-phoneme">
+                <div class="phoneme-wrap">
+                  <input type="text" class="iat-inputfield" placeholder="p" />
+                  <div class="phoneme-btn">
+                    <button class="btn-add btn btn-inp">+</button>
+                    <button class="btn btn-edit btn-inp">⚙</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+
+        <!-- ======================================================================================================================= CHAPTER 3 - intonation ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Intonation</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chap-content">
+            <p class="p-info">
+              Choose all sentence types that make use of intonation. For each
+              chocen sentence type, select the correct placement and type of
+              intonation.
+              <br />
+              When intonation is added here, your sentence dictionary will
+              automatically update with intonation symbols.
+            </p>
+
+            <!-- ========== CHAP IAT ========== -->
+            <div class="chap-sub">
+              <div
+                class="iat-options opt-single"
+                data-path="phonology.intonation"
+                data-operation="toggle"
+                data-property="enabled"
+              >
+                <button class="btn btn-opt btn-select">On</button>
+              </div>
+
+              <div class="chap-iat">
+                <p class="p-iat-title">Sentence types to use for intonation</p>
+
+                <div
+                  class="iat-options opt-multi"
+                  data-path="phonology.intonations.types"
+                  data-group="intonation-types"
+                  data-generated="sentence-types"
+                >
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div data-container="intonation-types"></div>
+            </div>
+          </div>
+
+          <!-- ==========  TEMPLATE  ========== -->
+          <template data-template="intonation-types">
+            <div data-instance>
+              <p class="p-iat-title" data-instance-title></p>
+
+              <div class="chap-iat-wrap">
+                <p class="p-info">Intonation placement:</p>
+
+                <div
+                  class="iat-options opt-multi"
+                  data-generated="intonation-placement"
+                >
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <div class="chap-iat-inner">
+                <div class="chap-iat-wrap">
+                  <p class="p-info">Intonation type:</p>
+
+                  <div
+                    class="iat-options opt-single"
+                    data-generated="intonation-type"
+                  >
+                    <button class="btn btn-opt btn-select" data-value="Falling">
+                      Falling
+                    </button>
+
+                    <button class="btn btn-opt btn-select" data-value="Rising">
+                      Rising
+                    </button>
+
+                    <button class="btn btn-opt btn-select" data-value="Dipping">
+                      Dipping
+                    </button>
+
+                    <button class="btn btn-opt btn-select" data-value="Peaking">
+                      Peaking
+                    </button>
+
+                    <button class="btn btn-close btn-opt">&lt;</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+        <!-- =========================================================================================================================== CHAPTER 4 - stress ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Stress</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chap-content">
+            <p class="p-warning">This is a warning message.</p>
+
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <h3>Primary stress</h3>
+
+              <!-- ========== CHAP IAT ========== -->
+              <!-- ============================================================================================================================= FIXED / LEXICAL CREATE ========================= -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Stress type</p>
+                <div class="iat-options opt-single">
+                  <button class="btn btn-opt btn-select selected">
+                    No stress
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="primaryStressFixed"
+                    data-value="primaryStressFixed"
+                  >
+                    Fixed
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="primaryStressLexical"
+                    data-value="primaryStressLexical"
+                  >
+                    Lexical
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <!-- ========================================================================================================================== FIXED / LEXICAL CONTAINER ========================= -->
+              <div data-container="primaryStressLexical"></div>
+              <div data-container="primaryStressFixed"></div>
+
+              <div class="chap-iat">
+                <div data-container="primaryStressProtoOn"></div>
+                <div data-container="primaryStressProtoOff"></div>
+              </div>
+
+              <!-- ============================================================================================================================= PROTO-OFF ON CONTAINER ========================= -->
+            </div>
+
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <h3>Secondary stress</h3>
+
+              <!-- ========== CHAP IAT ========== -->
+              <!-- ============================================================================================================================= FIXED / LEXICAL CREATE ========================= -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Stress type</p>
+                <div class="iat-options opt-single">
+                  <button class="btn btn-opt btn-select selected">
+                    No stress
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="secondaryStressFixed"
+                    data-value="secondaryStressFixed"
+                  >
+                    Fixed
+                  </button>
+                  <button
+                    class="btn btn-opt btn-select"
+                    data-group="secondaryStressLexical"
+                    data-value="secondaryStressLexical"
+                  >
+                    Lexical
+                  </button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <!-- ========================================================================================================================== FIXED / LEXICAL CONTAINER ========================= -->
+              <div data-container="secondaryStressLexical"></div>
+              <div data-container="secondaryStressFixed"></div>
+
+              <!-- ============================================================================================================================= PROTO-OFF ON CONTAINER ========================= -->
+
+              <div data-container="secondaryStressProtoOn"></div>
+              <div data-container="secondaryStressProtoOff"></div>
+
+              <div data-container="secondaryStressCountWord"></div>
+              <div data-container="secondaryStressCountStress"></div>
+            </div>
+          </div>
+
+          <!-- ===================================================================================================================================== LEXICAL TEMPLATE ========================= -->
+        </div>
+
+        <!-- ============================================================================================================================= CHAPTER 5 - tone ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Tone</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chap-content">
+            <p class="p-warning">
+              This part of the page is in still in progress
+            </p>
+
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <!-- ========== CHAP IAT ========== -->
+              <!-- Give id -->
+              <div class="chap-iat">
+                <p class="p-iat-title">Tone</p>
+                <div class="iat-options opt-single">
+                  <button class="btn btn-opt btn-select">Off</button>
+                  <button class="btn btn-opt btn-select">On</button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <!-- ========== CHAP IAT ========== -->
+              <!-- Only add if tone langauge is on -->
+              <div class="chap-iat" style="display: none">
+                <p class="p-iat-title">Type of tone language</p>
+                <div class="iat-options opt-single">
+                  <button class="btn btn-opt btn-select">Contour</button>
+                  <button class="btn btn-opt btn-select">Register</button>
+
+                  <button class="btn btn-close btn-opt">&lt;</button>
+                </div>
+              </div>
+
+              <!-- Only add if tone langauge is on -->
+              <button class="btn btn-main" style="display: none">
+                Add tone to your dictionary words
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <template data-template="primaryStressLexical">
+          <div class="chap-iat" data-instance>
+            <button class="btn btn-main">
+              Add stress to each word in your dictionary
+            </button>
+          </div>
+        </template>
+
+        <!-- ======================================================================================================================================= FIXED TEMPLATE ========================= -->
+        <template data-template="primaryStressFixed">
+          <div class="chap-iat" data-instance>
+            <p class="p-iat-title">
+              Use the proto-language's lexical system and evolution to place
+              stress
+            </p>
+            <div class="iat-options opt-single">
+              <button
+                class="btn btn-opt btn-select"
+                data-group="primaryStressProtoOff"
+                data-value="primaryStressProtoOff"
+              >
+                Off
+              </button>
+              <button
+                class="btn btn-opt btn-select"
+                data-group="primaryStressProtoOn"
+                data-value="primaryStressProtoOn"
+              >
+                On
+              </button>
+
+              <button class="btn btn-close btn-opt">&lt;</button>
+            </div>
+          </div>
+        </template>
+        <!-- ================================================================================================================================= PROTO-OFF TEMPLATE ========================= -->
+        <template data-template="primaryStressProtoOff">
+          <button class="btn btn-main" data-instance>
+            Another language must be selected as this language's proto-language.
+            If this is the proto-lan select off. Then select which lan evolves
+            from this on the settings page.
+          </button>
+        </template>
+
+        <!-- ================================================================================================================================= PROTO-ON TEMPLATE ========================= -->
+        <template data-template="primaryStressProtoOn">
+          <div class="chap-iat" data-instance>
+            <p class="p-iat-title">
+              Syllable receiving stress
+              <small
+                >(+ means from the left, - is calculated from the right. For
+                example, +1 is word initial and -2 is the second to last
+                syllable. When adding new options, use + and - with the correct
+                number, and check that stress is placed correctly)</small
+              >
+            </p>
+            <div class="iat-options opt-single">
+              <button class="btn btn-opt btn-select">+1</button>
+              <button class="btn btn-opt btn-select">+2</button>
+              <button class="btn btn-opt btn-select">+3</button>
+              <button class="btn btn-opt btn-select">-3</button>
+              <button class="btn btn-opt btn-select">-2</button>
+              <button class="btn btn-opt btn-select">-1</button>
+
+              <div class="inputfield-icon" style="display: none">
+                <!-- . -->
+                <button class="btn-icon btn btn-add">+</button>
+
+                <input
+                  type="text"
+                  class="iat-inputfield opt-inputfield"
+                  placeholder="Add option..."
+                />
+              </div>
+
+              <button class="btn btn-edit btn-opt">⚙</button>
+              <button class="btn btn-close btn-opt">&lt;</button>
+            </div>
+          </div>
+        </template>
+
+        <template data-template="secondaryStressLexical">
+          <div class="chap-iat" data-instance>
+            <button class="btn btn-main">
+              Add stress to each word in your dictionary
+            </button>
+          </div>
+        </template>
+
+        <!-- ======================================================================================================================================= FIXED TEMPLATE ========================= -->
+        <template data-template="secondaryStressFixed">
+          <div class="chap-iat" data-instance>
+            <p class="p-iat-title">
+              Use the proto-language's lexical system and evolution to place
+              stress
+            </p>
+            <div class="iat-options opt-single">
+              <button
+                class="btn btn-opt btn-select"
+                data-group="secondaryStressProtoOff"
+                data-value="secondaryStressProtoOff"
+              >
+                Off
+              </button>
+              <button
+                class="btn btn-opt btn-select"
+                data-group="secondaryStressProtoOn"
+                data-value="secondaryStressProtoOn"
+              >
+                On
+              </button>
+
+              <button class="btn btn-close btn-opt">&lt;</button>
+            </div>
+          </div>
+        </template>
+        <!-- ================================================================================================================================= PROTO-OFF TEMPLATE ========================= -->
+        <template data-template="secondaryStressProtoOff">
+          <button class="btn btn-main" data-instance>
+            Another language must be selected as this language's proto-language.
+            If this is the proto-lan select off. Then select which lan evolves
+            from this on the settings page.
+          </button>
+        </template>
+
+        <!-- ================================================================================================================================= PROTO-ON TEMPLATE ========================= -->
+        <template data-template="secondaryStressProtoOn">
+          <div class="chap-iat" data-instance>
+            <p class="p-iat-title">
+              Where to start counting to place primary stress
+            </p>
+            <div class="iat-options opt-single">
+              <button
+                class="btn btn-opt btn-select"
+                data-group="secondaryStressCountWord"
+              >
+                word boundary
+              </button>
+
+              <button
+                class="btn btn-opt btn-select"
+                data-group="secondaryStressCountStress"
+              >
+                primary stress
+              </button>
+
+              <button class="btn btn-close btn-opt">&lt;</button>
+            </div>
+          </div>
+        </template>
+
+        <template data-template="secondaryStressCountWord">
+          <div class="chap-iat" data-instance>
+            <p class="p-iat-title">
+              Syllable receiving secondary stres
+              <small
+                >(+ means from the left, - is calculated from the right. For
+                example, +1 is word initial and -2 is the second to last
+                syllable. When adding new options, use + and - with the correct
+                number, and check that stress is placed correctly)</small
+              >
+            </p>
+            <div class="iat-options opt-single">
+              <button class="btn btn-opt btn-select">+1</button>
+              <button class="btn btn-opt btn-select">+2</button>
+              <button class="btn btn-opt btn-select">+3</button>
+              <button class="btn btn-opt btn-select">-3</button>
+              <button class="btn btn-opt btn-select">-2</button>
+              <button class="btn btn-opt btn-select">-1</button>
+
+              <div class="inputfield-icon" style="display: none">
+                <!-- . -->
+                <button class="btn-icon btn btn-add">+</button>
+
+                <input
+                  type="text"
+                  class="iat-inputfield opt-inputfield"
+                  placeholder="Add option..."
+                />
+              </div>
+
+              <button class="btn btn-edit btn-opt">⚙</button>
+              <button class="btn btn-close btn-opt">&lt;</button>
+            </div>
+          </div>
+        </template>
+
+        <template data-template="secondaryStressCountStress">
+          <div class="chap-iat" data-instance>
+            <p class="p-iat-title">
+              Syllable receiving secondary stres, compared to syllable with
+              primary stress
+              <small
+                >(+ means from the left, - is calculated from the right. For
+                example, +1 is the syllable directly on the right of the
+                primarily stressed syllable and -2 is two syllables left of the
+                primarily stressed syllable. When adding new options, use + and
+                - with the correct number, and check that stress is placed
+                correctly)</small
+              >
+            </p>
+            <div class="iat-options opt-single">
+              <button class="btn btn-opt btn-select">+1</button>
+              <button class="btn btn-opt btn-select">+2</button>
+              <button class="btn btn-opt btn-select">+3</button>
+              <button class="btn btn-opt btn-select">-3</button>
+              <button class="btn btn-opt btn-select">-2</button>
+              <button class="btn btn-opt btn-select">-1</button>
+
+              <div class="inputfield-icon" style="display: none">
+                <!-- . -->
+                <button class="btn-icon btn btn-add">+</button>
+
+                <input
+                  type="text"
+                  class="iat-inputfield opt-inputfield"
+                  placeholder="Add option..."
+                />
+              </div>
+
+              <button class="btn btn-edit btn-opt">⚙</button>
+              <button class="btn btn-close btn-opt">&lt;</button>
+            </div>
+          </div>
+        </template>
+
+        <script src="../js/appData.js"></script>
+        <script src="../js/appState.js"></script>
+        <script src="../js/dataAccess.js"></script>
+        <script src="../js/dataSync.js"></script>
+
+        <script src="../js/projectSave.js"></script>
+
+        <script src="../js/iat.js"></script>
+
+        <script src="../js/languageStageSwitching.js"></script>
+        <script src="../js/nav.js"></script>
+        <script src="../js/feature-visibility.js"></script>
+      </main>
+    </div>
+  </body>
+</html>
+
+<!-- appData.languages.language1.stages.stage1.data.phonology.phonemes.minimalPairs -->
+<!-- appData.languages.language1.stages.stage1.data.phonology.syllables.syllableExceptions -->
+<!-- appData.languages.language1.stages.stage1.data.phonology.syllables.phonemeExceptions -->
+<!-- appData.languages.language1.languageData.grammaticalProperties.sentenceTypes -->
+<!-- appData.languages.language1.stages.stage1.data.phonology.intonations.types -->

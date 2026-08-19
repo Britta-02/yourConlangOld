@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- ========================================================================================================================================== NAV ===== -->
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-main">
+                <a href="../index.html" class="nav-item home">
+                    <img src="../images/Logo.png" alt="Logo" />
+                    <span class="nav-label">Home</span>
+                </a>
+
+                <a href="phonology.html" class="nav-item">
+                    <i class="fa-solid fa-microphone"></i>
+                    <span class="nav-label">Phonology</span>
+                </a>
+
+                <a href="grammar.html" class="nav-item">
+                    <i class="fa-solid fa-cube"></i>
+                    <span class="nav-label">Grammar</span>
+                </a>
+
+                <a href="morphology.html" class="nav-item">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <span class="nav-label">Morphology</span>
+                </a>
+
+                <a href="syntax.html" class="nav-item">
+                    <i class="fa-solid fa-list-ol"></i>
+                    <span class="nav-label">Syntax</span>
+                </a>
+
+                <a href="evolution.html" class="nav-item">
+                    <i class="fa-solid fa-timeline"></i>
+                    <span class="nav-label">Evolution</span>
+                </a>
+
+                <a href="phrases.html" class="nav-item">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <span class="nav-label">Phrases</span>
+                </a>
+
+                <a href="dictionary.html" class="nav-item">
+                    <i class="fa-solid fa-book-atlas"></i>
+                    <span class="nav-label">Dictionary</span>
+                </a>
+
+                <a href="sentences.html" class="nav-item">
+                    <i class="fa-solid fa-align-center"></i>
+                    <span class="nav-label">Sentences</span>
+                </a>
+
+
+
+                <a href="testpage.html" class="nav-item">
+                    <i class="">TP</i>
+                    <span class="nav-label">Testpage</span>
+                </a>
+            </div>
+
+            <!-- ========================= SUB NAV ========================= -->
+
+            <button class="btn-nav-lock" title="Sidebar mode">
+                <i class="fa-solid fa-lock-open"></i>
+            </button>
+        </nav>
+
+        <div class="page-settings">
+            <button class="btn btn-main btn-settings" style="background-color: #ffc745;">Save</button>
+
+            <button class="btn btn-main btn-settings btn-language-switch">Language A</button>
+            <button class="btn btn-main btn-settings btn-stage-switch">Modern</button>
+
+            <div class="mode-toggle" data-state="edit">
+                <button class="btn-nav-toggle">
+                    <i class="fa-solid fa-pencil"></i>
+                </button>
+            </div>
+
+            <div class="mode-toggle" data-state="down">
+                <button class="btn-nav-toggle">
+                    <!-- <i class="fa-solid fa-angle-up"></i> -->
+                    <i class="fa-solid fa-angle-down"></i>
+                </button>
+            </div>
+
+            <div class="mode-toggle">
+                <a href="settings.html" class="nav-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="nav-label">Settings</span>
+                </a>
+            </div>
+        </div>
+
+        <main class="page-content">
+            <!-- ============================================================================================================================= MAIN-CONTENT ===== -->
+            <h1>Word Order</h1>
+            <p class="p-info">Page description here.</p>
+
+            <!-- ================================================================================================================ CHAPTER 1 - Particles ===== -->
+            <div class="chap">
+                <div class="chap-title">
+                    <h2>Particles</h2>
+                    <div class="iat-input inp-note">
+                        <button class="btn btn-note">
+                            <i class="fa-regular fa-note-sticky"></i>
+                        </button>
+
+                        <div class="popup-overlay hidden">
+                            <div class="popup-window note-popup">
+                                <button class="btn btn-note-close">✕</button>
+
+                                <h2 class="note-title"></h2>
+
+                                <p class="p-info">Write your notes about chapter 1.</p>
+
+                                <div class="note-toolbar">
+                                    <button class="btn btn-note-tool btn-h3">h1</button>
+                                    <button class="btn btn-note-tool btn-h4">h2</button>
+                                    <button class="btn btn-note-tool btn-p">p</button>
+
+                                    <button class="btn btn-note-tool btn-bold">
+                                        <b>B</b>
+                                    </button>
+                                    <button class="btn btn-note-tool btn-italic">
+                                        <i>I</i>
+                                    </button>
+                                    <button class="btn btn-note-tool btn-underline">
+                                        <u>U</u>
+                                    </button>
+                                </div>
+
+                                <div class="note-editor" contenteditable="true"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========================= CHAP-CONTENT ========================= -->
+                <div class="chap-content">
+                    <p>Create particles in your dictionary. Activate them here and choose grammatical features for each
+                        particle.</p>
+
+                    <button class="btn btn-main"> Create particles in your dictionary</button>
+                    <!-- ========== CHAP IAT ========== -->
+                    <div class="chap-iat">
+                        <p class="p-iat-title">
+                            All created particles are shown below. Select any to add them.
+                        </p>
+                        <div class="iat-options opt-multi create-has-group" data-create-group="particleStrategies">
+
+                            <button class="btn btn-opt btn-select" data-group="particleStrategies"
+                                data-value="TestParticle">
+                                TestParticle
+                            </button>
+
+                            <button class="btn btn-close btn-opt">&lt;</button>
+                        </div>
+                    </div>
+
+                    <div data-container="particleStrategies"></div>
+
+                </div>
+
+                <!-- ============================================================================================================== TEMPLATE - Particle ===== -->
+                <template data-template="particleStrategies">
+                    <div class="chap-sub" data-instance>
+                        <h3 data-instance-title></h3>
+
+                        <div class="chap-iat">
+                            <div class="iat-options opt-multi">
+                                <p class="p-info">Grammatical features:</p>
+                                <button class="btn btn-opt btn-select">Option</button>
+                                <button class="btn btn-opt btn-select">Option</button>
+                                <button class="btn btn-opt btn-select">Option</button>
+                                <button class="btn btn-opt btn-select">Option</button>
+
+                                <button class="btn btn-close btn-opt">&lt;</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </template>
+            </div>
+
+
+
+            <!-- ================================================================================================================ CHAPTER 2 - Auxiliary ===== -->
+            <div class="chap">
+                <div class="chap-title">
+                    <h2>Auxiliaries</h2>
+                    <div class="iat-input inp-note">
+                        <button class="btn btn-note">
+                            <i class="fa-regular fa-note-sticky"></i>
+                        </button>
+
+                        <div class="popup-overlay hidden">
+                            <div class="popup-window note-popup">
+                                <button class="btn btn-note-close">✕</button>
+
+                                <h2 class="note-title"></h2>
+
+                                <p class="p-info">Write your notes about chapter 1.</p>
+
+                                <div class="note-toolbar">
+                                    <button class="btn btn-note-tool btn-h3">h1</button>
+                                    <button class="btn btn-note-tool btn-h4">h2</button>
+                                    <button class="btn btn-note-tool btn-p">p</button>
+
+                                    <button class="btn btn-note-tool btn-bold">
+                                        <b>B</b>
+                                    </button>
+                                    <button class="btn btn-note-tool btn-italic">
+                                        <i>I</i>
+                                    </button>
+                                    <button class="btn btn-note-tool btn-underline">
+                                        <u>U</u>
+                                    </button>
+                                </div>
+
+                                <div class="note-editor" contenteditable="true"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========================= CHAP-CONTENT ========================= -->
+                <div class="chap-content">
+                    <p>Create auxiliaries in your dictionary. Activate them here and choose grammatical features for
+                        each
+                        auxiliary.</p>
+
+                    <button class="btn btn-main"> Create auxiliaries in your dictionary</button>
+
+                    <!-- ========== CHAP IAT ========== -->
+                    <div class="chap-iat">
+                        <p class="p-iat-title">
+                            All created auxiliaries are shown below. Select any to add them.
+                        </p>
+                        <div class="iat-options opt-multi create-has-group" data-create-group="auxiliaryStrategies">
+
+                            <button class="btn btn-opt btn-select" data-group="auxiliaryStrategies"
+                                data-value="TestAuxiliary">
+                                TestAuxiliary
+                            </button>
+
+                            <button class="btn btn-close btn-opt">&lt;</button>
+                        </div>
+                    </div>
+
+                    <div data-container="auxiliaryStrategies"></div>
+
+                </div>
+
+                <!-- ============================================================================================================= TEMPLATE - Auxiliary ===== -->
+                <template data-template="auxiliaryStrategies">
+                    <div class="chap-sub" data-instance>
+                        <h3 data-instance-title></h3>
+
+                        <div class="chap-iat">
+                            <div class="iat-options opt-multi">
+                                <p class="p-info">Grammatical features:</p>
+                                <button class="btn btn-opt btn-select">Option</button>
+                                <button class="btn btn-opt btn-select">Option</button>
+                                <button class="btn btn-opt btn-select">Option</button>
+                                <button class="btn btn-opt btn-select">Option</button>
+
+                                <button class="btn btn-close btn-opt">&lt;</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </template>
+            </div>
+
+
+
+
+
+
+            <!-- ========================================================================================================== CHAPTER 3 - main word order ===== -->
+            <div class="chap">
+                <div class="chap-title">
+                    <h2>Main word order</h2>
+                    <div class="iat-input inp-note">
+                        <button class="btn btn-note">
+                            <i class="fa-regular fa-note-sticky"></i>
+                        </button>
+
+                        <div class="popup-overlay hidden">
+                            <div class="popup-window note-popup">
+                                <button class="btn btn-note-close">✕</button>
+
+                                <h2 class="note-title"></h2>
+
+                                <p class="p-info">Write your notes about chapter 1.</p>
+
+                                <div class="note-toolbar">
+                                    <button class="btn btn-note-tool btn-h3">h1</button>
+                                    <button class="btn btn-note-tool btn-h4">h2</button>
+                                    <button class="btn btn-note-tool btn-p">p</button>
+
+                                    <button class="btn btn-note-tool btn-bold">
+                                        <b>B</b>
+                                    </button>
+                                    <button class="btn btn-note-tool btn-italic">
+                                        <i>I</i>
+                                    </button>
+                                    <button class="btn btn-note-tool btn-underline">
+                                        <u>U</u>
+                                    </button>
+                                </div>
+
+                                <div class="note-editor" contenteditable="true"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========================= CHAP-CONTENT ========================= -->
+                <div class="chap-content">
+                    <p class="p-info">Create the default word order, used for basic sentence structure.</p>
+
+                    <!-- ========================= SUB CHAP ========================= -->
+                    <div class="chap-sub">
+                        <!-- ========== CHAP IAT's ========== -->
+                        <h3>Primary word order</h3>
+                        <div class="chap-iat">
+
+
+                            <!-- <p class="p-iat-title">Primary word order</p> -->
+                            <div class="iat-order ord-apply">
+
+                                <div class="ord-used">
+                                    <p class="p-used-title">order:</p>
+                                    <p class="p-draggable p-used" draggable="true">Subject</p>
+                                    <p class="p-draggable p-used" draggable="true">Object</p>
+                                    <p class="p-draggable p-used" draggable="true">Verb</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ========================= SUB CHAP ========================= -->
+                    <div class="chap-sub">
+                        <h3>Full sentence/clause order</h3>
+                        <!-- ========== CHAP IAT's ========== -->
+                        <!-- iat 2 -->
+                        <div class="chap-iat">
+
+                            <p class="p-iat-title">General</p>
+                            <div class="iat-order ord-apply">
+                                <div class="ord-available">
+                                    <p class="p-available-title">Add parts of speech to the word order:</p>
+                                    <button class="btn btn-select p-draggable p-available">Auxiliary</button>
+                                    <button class="btn btn-select p-draggable p-available">Conjunction</button>
+                                </div>
+
+                                <div class="ord-used">
+                                    <p class="p-used-title">Order:</p>
+                                    <button class="btn p-draggable p-used">Subject</button>
+                                    <button class="btn p-draggable p-used">Object</button>
+                                    <button class="btn p-draggable p-used">Verb</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chap-iat">
+
+                            <p class="p-iat-title">Add specific words to word order. Meant for ordering auxiliaries and
+                                particles.</p>
+                            <div class="iat-order ord-apply">
+                                <div class="ord-available">
+                                    <p class="p-available-title">Add:</p>
+                                    <!-- <button class="btn btn-select p-draggable p-available">Auxiliary 1</button>
+                                    <button class="btn btn-select p-draggable p-available">Particle 1</button> -->
+                                </div>
+
+                                <div class="ord-used">
+                                    <p class="p-used-title">Order:</p>
+                                    <button class="btn p-draggable p-used">Subject</button>
+                                    <button class="btn p-draggable p-used">Object</button>
+                                    <button class="btn p-draggable p-used">Verb</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ========================= SUB CHAP ========================= -->
+                    <div class="chap-sub">
+                        <h3>Noun phrase order</h3>
+
+                        <div class="chap-iat">
+
+                        </div>
+                        <!-- ========== CHAP IAT's ========== -->
+                        <div class="chap-iat">
+
+                            <p class="p-iat-title">Noun phrase</p>
+                            <div class="iat-order ord-apply" data-group="nounPhrase">
+                                <div class="ord-available">
+                                    <p class="p-available-title">Add:</p>
+                                    <button class="btn btn-select p-draggable p-available"
+                                        data-group="adposition">Adposition</button>
+                                    <button class="btn btn-select p-draggable p-available"
+                                        data-group="adjective">Adjective</button>
+                                    <button class="btn btn-select p-draggable p-available">Demonstrative</button>
+                                    <button class="btn btn-select p-draggable p-available">Possessor</button>
+                                    <button class="btn btn-select p-draggable p-available">Numeral</button>
+                                    <button class="btn btn-select p-draggable p-available">Relative clause</button>
+                                    <button class="btn btn-select p-draggable p-available">Genitive</button>
+                                </div>
+
+                                <div class="ord-used">
+                                    <p class="p-used-title">order:</p>
+                                    <button class="btn p-draggable p-used p-fixed" draggable="true">noun</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-container="adjective"></div>
+                        <div data-container="adposition"></div>
+                    </div>
+
+                    <div class="chap-sub">
+                        <!-- ========== CHAP IAT's ========== -->
+                        <h3>Adverb order</h3>
+                        <div class="chap-iat">
+
+
+                            <!-- <p class="p-iat-title">Primary word order</p> -->
+                            <div class="iat-order ord-apply">
+                                <div class="ord-used">
+                                    <p class="p-used-title">order:</p>
+                                    <p class="p-draggable p-used" draggable="true">Adverb</p>
+                                    <p class="p-draggable p-used" draggable="true">Verb</p>
+                                </div>
+
+                            </div>
+                            <div class="iat-order ord-apply">
+                                <div class="ord-used">
+                                    <p class="p-used-title">order:</p>
+                                    <p class="p-draggable p-used" draggable="true">Adverb</p>
+                                    <p class="p-draggable p-used" draggable="true">Adjective</p>
+                                </div>
+
+                            </div>
+                            <div class="iat-order ord-apply">
+                                <div class="ord-used">
+                                    <p class="p-used-title">order:</p>
+                                    <p class="p-draggable p-used" draggable="true">Adverb</p>
+                                    <p class="p-draggable p-used" draggable="true">Determiner</p>
+                                </div>
+
+                            </div>
+                            <div class="iat-order ord-apply">
+                                <div class="ord-used">
+                                    <p class="p-used-title">order:</p>
+                                    <p class="p-draggable p-used" draggable="true">Adverb</p>
+                                    <p class="p-draggable p-used" draggable="true">Sentence/clause</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="chap-sub">
+                        <!-- ========== CHAP IAT's ========== -->
+                        <h3>Clause order</h3>
+
+                        <div class="chap-iat">
+                            <p class="p-iat-title">For which do you want to make exceptions</p>
+                            <div class="iat-options opt-multi">
+                                <button class="btn btn-opt btn-select" data-group="clauseOrder"
+                                    data-value="Relative clause - Subject">Relative clause - Subject</button>
+                                <button class="btn btn-opt btn-select" data-group="clauseOrder"
+                                    data-value="Relative clause - Object">Relative clause - Object</button>
+                                <button class="btn btn-opt btn-select" data-group="clauseOrder"
+                                    data-value="Relative clause - Indirect object">Relative clause - Indirect
+                                    object</button>
+                                <button class="btn btn-opt btn-select" data-group="clauseOrder"
+                                    data-value="Relative clause - Oblique">Relative clause - Oblique</button>
+                                <button class="btn btn-opt btn-select" data-group="clauseOrder"
+                                    data-value="Relative clause - Genitive">Relative clause - Genitive</button>
+                                <button class="btn btn-opt btn-select" data-group="clauseOrder"
+                                    data-value="Relative clause - Object of comorative">Relative clause - Object of
+                                    comorative</button>
+                                <button class="btn btn-opt btn-select" data-group="clauseOrder"
+                                    data-value="Adverbial clause - Modified clause/predicate">Adverbial clause -
+                                    Modified
+                                    clause/predicate</button>
+
+                                <div class="inputfield-icon" style="display: none">
+                                    <button class="btn-icon btn btn-add">+</button>
+
+                                    <input type="text" class="iat-inputfield opt-inputfield"
+                                        placeholder="Add option..." />
+                                </div>
+
+                                <button class="btn btn-edit btn-opt">⚙</button>
+                                <button class="btn btn-close btn-opt">&lt;</button>
+                            </div>
+                        </div>
+
+                        <div data-container="clauseOrder"></div>
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+                <!-- ============================================================================================= TEMPLATES - Adjective and adposition ===== -->
+                <template data-template="adjective">
+                    <div class="chap-iat" data-instance>
+                        <p class="p-iat-title">Adjective pattern</p>
+
+                        <div class="iat-order ord-apply">
+
+                            <div class="ord-used">
+                                <p class="p-used-title">order:</p>
+                                <button class="btn fake-select p-draggable p-used">Quantity</button>
+                                <button class="btn fake-select p-draggable p-used">Opinion</button>
+                                <button class="btn fake-select p-draggable p-used">Size</button>
+                                <button class="btn fake-select p-draggable p-used">Age</button>
+                                <button class="btn fake-select p-draggable p-used">Shape</button>
+                                <button class="btn fake-select p-draggable p-used">Colour</button>
+                                <button class="btn fake-select p-draggable p-used">Origin</button>
+                                <button class="btn fake-select p-draggable p-used">Material</button>
+                                <button class="btn fake-select p-draggable p-used">Purpose</button>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+
+                <template data-template="adposition">
+                    <div class="chap-iat" data-instance>
+                        <p class="p-iat-title">Adpositional phrase</p>
+
+                        <div class="iat-order ord-apply">
+
+                            <div class="ord-used">
+                                <p class="p-used-title">order:</p>
+                                <button class="btn fake-select p-draggable p-used" draggable="true">Time</button>
+                                <button class="btn fake-select p-draggable p-used" draggable="true">Manner</button>
+                                <button class="btn fake-select p-draggable p-used" draggable="true">Place</button>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+
+
+
+
+
+                <template data-template="clauseOrder">
+                    <div data-instance>
+                        <h4 data-instance-title></h4>
+
+                        <div class="chap-iat">
+                            <p class="p-iat-title">Clause comes before/ after modified element</p>
+                            <div class="iat-options opt-multi">
+                                <button class="btn btn-opt btn-select" data-group="relativeClauseStrategy"
+                                    data-value="Subject">before</button>
+                                <button class="btn btn-opt btn-select" data-group="relativeClauseStrategy"
+                                    data-value="Object">after</button>
+
+                                <button class="btn btn-close btn-opt">&lt;</button>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+
+            <!-- ========================================================================================================= CHAPTER 4 - other word order ===== -->
+            <div class="chap">
+                <div class="chap-title">
+                    <h2>Other word orders</h2>
+                    <div class="iat-input inp-note">
+                        <button class="btn btn-note">
+                            <i class="fa-regular fa-note-sticky"></i>
+                        </button>
+
+                        <div class="popup-overlay hidden">
+                            <div class="popup-window note-popup">
+                                <button class="btn btn-note-close">✕</button>
+
+                                <h2 class="note-title"></h2>
+
+                                <p class="p-info">Write your notes about chapter 1.</p>
+
+                                <div class="note-toolbar">
+                                    <button class="btn btn-note-tool btn-h3">h1</button>
+                                    <button class="btn btn-note-tool btn-h4">h2</button>
+                                    <button class="btn btn-note-tool btn-p">p</button>
+
+                                    <button class="btn btn-note-tool btn-bold">
+                                        <b>B</b>
+                                    </button>
+                                    <button class="btn btn-note-tool btn-italic">
+                                        <i>I</i>
+                                    </button>
+                                    <button class="btn btn-note-tool btn-underline">
+                                        <u>U</u>
+                                    </button>
+                                </div>
+
+                                <div class="note-editor" contenteditable="true"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chap-content">
+                    <p class="p-info">Different word order can be changed here. To add new types of word orders, select
+                        word order as a strategy for grammatical features elsewhere on the site.</p>
+
+                    <!-- ========================= SUB CHAP ========================= -->
+                    <div class="chap-sub">
+                        <div class="chap-iat">
+                            <p class="p-iat-title">Add new word order types</p>
+
+                            <div class="iat-options opt-multi create-has-group" data-create-group="sentenceType">
+
+                                <div class="inputfield-icon" style="display: none">
+                                    <button class="btn-icon btn btn-add">+</button>
+
+                                    <input type="text" class="iat-inputfield opt-inputfield"
+                                        placeholder="Add option..." />
+                                </div>
+
+                                <button class="btn btn-edit btn-opt">⚙</button>
+                                <button class="btn btn-close btn-opt">&lt;</button>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+
+                    <div data-container="sentenceType"></div>
+
+                </div>
+
+                <!-- ==================================================================================================== TEMPLATES - Other word orders ===== -->
+                <template data-template="sentenceType">
+                    <div class="chap-sub" data-instance>
+                        <h3 data-instance-title>Verbs</h3>
+                        <div class="chap-iat">
+                            <p class="p-iat-title">Choose orders that change campared to the main word order</p>
+
+                            <div class="iat-options opt-multi">
+                                <button class="btn btn-opt btn-select" data-group="ExceptionsPrimaryOrder"
+                                    data-value="ExceptionsPrimaryOrder">
+                                    Primary
+                                </button>
+
+                                <button class="btn btn-opt btn-select" data-group="ExceptionsAuxiliaryOrder"
+                                    data-value="ExceptionsAuxiliaryOrder">
+                                    Auxiliaries, particle & adverb
+                                </button>
+
+                                <button class="btn btn-opt btn-select" data-group="ExceptionsNounPhraseOrder"
+                                    data-value="ExceptionsNounPhraseOrder"> Noun
+                                    phrase
+                                </button>
+
+                                <button class="btn btn-opt btn-select" data-group="ExceptionsAdpositionOrder"
+                                    data-value="ExceptionsAdpositionOrder">
+                                    Adpositional
+                                </button>
+
+                                <button class="btn btn-opt btn-select" data-group="ExceptionsAdjectiveOrder"
+                                    data-value="ExceptionsAdjectiveOrder">
+                                    Adjective
+                                </button>
+
+                                <button class="btn btn-close btn-opt">&lt;</button>
+                            </div>
+                        </div>
+
+                        <div data-container="ExceptionsPrimaryOrder"></div>
+                        <div data-container="ExceptionsAuxiliaryOrder"></div>
+                        <div data-container="ExceptionsNounPhraseOrder"></div>
+                        <div data-container="ExceptionsAdjectiveOrder"></div>
+                        <div data-container="ExceptionsAdpositionOrder"></div>
+
+                    </div>
+                </template>
+
+
+                <template data-template="ExceptionsPrimaryOrder">
+                    <div class="chap-iat" data-instance>
+
+                        <p class="p-iat-title">Primary word order without auxiliaries:</p>
+                        <div class="iat-order ord-apply">
+
+                            <div class="ord-used">
+                                <p class="p-used-title">order:</p>
+                                <p class="p-draggable p-used" draggable="true">Subject</p>
+                                <p class="p-draggable p-used" draggable="true">Object</p>
+                                <p class="p-draggable p-used" draggable="true">Verb</p>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+                <template data-template="ExceptionsAuxiliaryOrder">
+                    <div class="chap-iat" data-instance>
+
+                        <p class="p-iat-title">Adverb, auxiliary & particle placement</p>
+                        <div class="iat-order ord-apply">
+                            <div class="ord-available">
+                                <p class="p-available-title">Add:</p>
+                                <button class="btn btn-select p-draggable p-available">Adverb</button>
+                                <button class="btn btn-select p-draggable p-available">Auxiliary 1</button>
+                                <button class="btn btn-select p-draggable p-available">Auxiliary 2</button>
+                                <button class="btn btn-select p-draggable p-available">Particle 1</button>
+                                <button class="btn btn-select p-draggable p-available">Particle 2</button>
+                            </div>
+
+                            <div class="ord-used">
+                                <p class="p-used-title">Order:</p>
+                                <button class="btn p-draggable p-used p-fixed">Subject</button>
+                                <button class="btn p-draggable p-used p-fixed">Object</button>
+                                <button class="btn p-draggable p-used p-fixed">Verb</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </template>
+                <template data-template="ExceptionsNounPhraseOrder">
+                    <div class="chap-iat" data-instance>
+
+                        <p class="p-iat-title">Noun phrase</p>
+                        <div class="iat-order ord-apply">
+                            <div class="ord-available">
+                                <p class="p-available-title">Add:</p>
+                                <button class="btn btn-select p-draggable p-available">Adposition</button>
+                                <button class="btn btn-select p-draggable p-available">Adjective</button>
+                                <button class="btn btn-select p-draggable p-available">Demonstrative</button>
+                                <button class="btn btn-select p-draggable p-available">Possessor</button>
+                                <button class="btn btn-select p-draggable p-available">Numeral</button>
+                                <button class="btn btn-select p-draggable p-available">Relative clause</button>
+                                <button class="btn btn-select p-draggable p-available">Genitive</button>
+                            </div>
+
+                            <div class="ord-used">
+                                <p class="p-used-title">order:</p>
+                                <button class="btn p-draggable p-used p-fixed" draggable="true">noun</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </template>
+                <template data-template="ExceptionsAdjectiveOrder">
+                    <div class="chap-iat" data-instance>
+                        <p class="p-iat-title">Adjective pattern</p>
+
+                        <div class="iat-order ord-apply">
+
+                            <div class="ord-used">
+                                <p class="p-used-title">order:</p>
+                                <button class="btn fake-select p-draggable p-used">Quantity</button>
+                                <button class="btn fake-select p-draggable p-used">Opinion</button>
+                                <button class="btn fake-select p-draggable p-used">Size</button>
+                                <button class="btn fake-select p-draggable p-used">Age</button>
+                                <button class="btn fake-select p-draggable p-used">Shape</button>
+                                <button class="btn fake-select p-draggable p-used">Colour</button>
+                                <button class="btn fake-select p-draggable p-used">Origin</button>
+                                <button class="btn fake-select p-draggable p-used">Material</button>
+                                <button class="btn fake-select p-draggable p-used">Purpose</button>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+                <template data-template="ExceptionsAdpositionOrder">
+                    <div class="chap-iat" data-instance>
+                        <p class=" p-iat-title">Adpositional phrase</p>
+
+                        <div class="iat-order ord-apply">
+
+                            <div class="ord-used">
+                                <p class="p-used-title">order:</p>
+                                <button class="btn fake-select p-draggable p-used" draggable="true">Time</button>
+                                <button class="btn fake-select p-draggable p-used" draggable="true">Manner</button>
+                                <button class="btn fake-select p-draggable p-used" draggable="true">Place</button>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+
+            </div>
+
+
+        </main>
+    </div>
+
+
+
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/iat.js"></script>
+    <script src="../js/feature-visibility.js"></script>
+    </main>
+</body>
+
+</html>

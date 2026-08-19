@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ========================================================================================================================================== NAV ===== -->
+    <div class="layout">
+      <nav class="sidebar">
+        <div class="sidebar-main">
+          <a href="../index.html" class="nav-item home">
+            <img src="../images/Logo.png" alt="Logo" />
+            <span class="nav-label">Home</span>
+          </a>
+
+          <a href="phonology.html" class="nav-item">
+            <i class="fa-solid fa-microphone"></i>
+            <span class="nav-label">Phonology</span>
+          </a>
+
+          <a href="grammar.html" class="nav-item">
+            <i class="fa-solid fa-cube"></i>
+            <span class="nav-label">Grammar</span>
+          </a>
+
+          <a href="morphology.html" class="nav-item">
+            <i class="fa-solid fa-ellipsis"></i>
+            <span class="nav-label">Morphology</span>
+          </a>
+
+          <a href="syntax.html" class="nav-item">
+            <i class="fa-solid fa-list-ol"></i>
+            <span class="nav-label">Syntax</span>
+          </a>
+
+          <a href="evolution.html" class="nav-item">
+            <i class="fa-solid fa-timeline"></i>
+            <span class="nav-label">Evolution</span>
+          </a>
+
+          <a href="phrases.html" class="nav-item">
+            <i class="fa-solid fa-comment-dots"></i>
+            <span class="nav-label">Phrases</span>
+          </a>
+
+          <a href="dictionary.html" class="nav-item">
+            <i class="fa-solid fa-book-atlas"></i>
+            <span class="nav-label">Dictionary</span>
+          </a>
+
+          <a href="sentences.html" class="nav-item">
+            <i class="fa-solid fa-align-center"></i>
+            <span class="nav-label">Sentences</span>
+          </a>
+
+          <a href="testpage.html" class="nav-item">
+            <i class="">TP</i>
+            <span class="nav-label">Testpage</span>
+          </a>
+        </div>
+
+        <!-- ========================= SUB NAV ========================= -->
+
+        <button class="btn-nav-lock" title="Sidebar mode">
+          <i class="fa-solid fa-lock-open"></i>
+        </button>
+      </nav>
+
+      <div class="page-settings">
+        <button
+          class="btn btn-main btn-settings"
+          style="background-color: #ffc745"
+        >
+          Save
+        </button>
+
+        <button class="btn btn-main btn-settings btn-language-switch">
+          Language A
+        </button>
+        <button class="btn btn-main btn-settings btn-stage-switch">
+          Modern
+        </button>
+
+        <div class="mode-toggle" data-state="edit">
+          <button class="btn-nav-toggle">
+            <i class="fa-solid fa-pencil"></i>
+          </button>
+        </div>
+
+        <div class="mode-toggle" data-state="down">
+          <button class="btn-nav-toggle">
+            <!-- <i class="fa-solid fa-angle-up"></i> -->
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+
+        <div class="mode-toggle">
+          <a href="settings.html" class="nav-item">
+            <i class="fa-solid fa-gear"></i>
+            <span class="nav-label">Settings</span>
+          </a>
+        </div>
+      </div>
+
+      <main class="page-content">
+        <!-- ================================================================================================================================= MAIN-CONTENT ===== -->
+        <h1>Phonological evolution</h1>
+        <p class="p-info">Page description here.</p>
+
+        <!-- ===================================================================================================================== CHAPTER 1 - Abbreviations ===== -->
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Abbreviations</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========================= CHAP-CONTENT ========================= -->
+          <div class="chap-content">
+            <p class="p-info">
+              Create all abbriviations you use in your rules here. Think about
+              V, C, etc. Assign each abbreviation the phonemes used in both your
+              proto, as well as modern language.
+            </p>
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <!-- ========== CHAP IAT ========== -->
+
+              <div class="chap-iat">
+                <div class="iat-input inp-rule container-shorts">
+                  <!-- rule 1 -->
+                  <div class="rule evoShort" id="short-1">
+                    <button class="btn-reorder btn btn-inp">↕</button>
+
+                    <input
+                      type="text"
+                      class="iat-inputfield symbol-char short-input"
+                      id="symbol-char-1"
+                      placeholder="Abbreviation..."
+                    />
+                    <span class="p-rule-symbol">=</span>
+                    <input
+                      type="text"
+                      class="iat-inputfield meaning-char short-input"
+                      id="meaning-char-1"
+                      placeholder="Enter phonemes..."
+                    />
+                  </div>
+
+                  <!-- rule buttons -->
+                  <div class="rule-btn" style="padding-top: 0.5rem">
+                    <!-- <button class="btn-add btn btn-inp">+</button> -->
+                    <button class="btn btn-inp btn-add">+</button>
+
+                    <button class="btn btn-edit btn-inp">⚙</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chap">
+          <div class="chap-title">
+            <h2>Rules</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========================= CHAP-CONTENT ========================= -->
+          <div class="chap-content">
+            <p class="p-info">
+              Create your languages phonological evolutio rules here.
+            </p>
+
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <div class="chap-iat">
+                <div class="iat-input inp-rule container-rules">
+                  <!-- rule 1 -->
+                  <div class="rule evoRule" id="rule-1">
+                    <button class="btn-reorder btn btn-inp">↕</button>
+
+                    <input
+                      type="text"
+                      class="iat-inputfield cur-char rule-input"
+                      id="cur-char-1"
+                      placeholder="Enter phonemes..."
+                    />
+                    <span class="p-rule-symbol">&gt;</span>
+                    <input
+                      type="text"
+                      class="iat-inputfield new-char rule-input"
+                      id="new-char-1"
+                      placeholder="Enter phonemes..."
+                    />
+                    <span class="p-rule-symbol">/</span>
+                    <input
+                      type="text"
+                      class="iat-inputfield bef-char rule-input"
+                      id="bef-char-1"
+                      placeholder="Enter phonemes..."
+                    />
+                    <span class="p-rule-symbol">_</span>
+                    <input
+                      type="text"
+                      class="iat-inputfield aft-char rule-input"
+                      id="aft-char-1"
+                      placeholder="Enter phonemes..."
+                    />
+                    <span class="p-rule-symbol">!</span>
+                    <input
+                      type="text"
+                      class="iat-inputfield unl-bef rule-input"
+                      id="unl-bef-1"
+                      placeholder="Enter phonemes..."
+                    />
+                    <span class="p-rule-symbol">_</span>
+                    <input
+                      type="text"
+                      class="iat-inputfield unl-aft rule-input"
+                      id="unl-aft-1"
+                      placeholder="Enter phonemes..."
+                    />
+                    <button class="btn-delete btn btn-inp">✕</button>
+                  </div>
+
+                  <!-- rule buttons -->
+                  <div class="rule-btn" style="padding-top: 0.5rem">
+                    <!-- <button class="btn-add btn btn-inp">+</button> -->
+                    <button class="btn btn-add btn-inp">+</button>
+                    <button class="btn btn-edit btn-inp">⚙</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chap">
+          <div class="chap-title">
+            <h2>In- and output</h2>
+            <div class="iat-input inp-note">
+              <button class="btn btn-note">
+                <i class="fa-regular fa-note-sticky"></i>
+              </button>
+
+              <div class="popup-overlay hidden">
+                <div class="popup-window note-popup">
+                  <button class="btn btn-note-close">✕</button>
+
+                  <h2 class="note-title"></h2>
+
+                  <p class="p-info">Write your notes about chapter 1.</p>
+
+                  <div class="note-toolbar">
+                    <button class="btn btn-note-tool btn-h3">h1</button>
+                    <button class="btn btn-note-tool btn-h4">h2</button>
+                    <button class="btn btn-note-tool btn-p">p</button>
+
+                    <button class="btn btn-note-tool btn-bold">
+                      <b>B</b>
+                    </button>
+                    <button class="btn btn-note-tool btn-italic">
+                      <i>I</i>
+                    </button>
+                    <button class="btn btn-note-tool btn-underline">
+                      <u>U</u>
+                    </button>
+                  </div>
+
+                  <div class="note-editor" contenteditable="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========================= CHAP-CONTENT ========================= -->
+          <div class="chap-content">
+            <p class="p-info">
+              Give your proto words here and create your modern words.
+            </p>
+
+            <button class="btn btn-main" id="mySubmit">Evolve words</button>
+
+            <!-- ========================= SUB CHAP ========================= -->
+            <div class="chap-sub">
+              <!-- ========== CHAP IAT ========== -->
+
+              <div class="chap-iat">
+                <p class="p-iat-title">Proto words</p>
+
+                <div class="iat-input inp-info">
+                  <textarea
+                    class="iat-inputfield"
+                    id="myText"
+                    placeholder="Enter note..."
+                    rows="1"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="chap-iat">
+                <p class="p-iat-title">Modern words</p>
+
+                <div class="iat-input inp-info container-output">
+                  <h3 id="output-word"></h3>
+                  <!-- <textarea class="iat-inputfield" placeholder="Enter note..." rows="1"></textarea> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script src="../js/nav.js"></script>
+        <script src="../js/iat.js"></script>
+        <script src="../js/feature-visibility.js"></script>
+        <script src="../js/evolution.js"></script>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1045 @@
+/* ==============================================================================================================================!!!!!!!!!!==========ROOT===== */
+:root {
+  --clr-brand: hsl(241, 43%, 43%);
+  --clr-pop: #ffc745;
+  --clr-select: #636b2f;
+  --clr-light: #f8f7f9;
+  --clr-dark: #171a17;
+  /* --clr-brand-background: hsla(241, 43%, 43%, 0.08); */
+
+  --clr-brand-background: hsl(from var(--clr-brand) h s calc(l + 53));
+
+  --clr-brand-dark1: hsl(from var(--clr-brand) h s calc(l - 10));
+  --clr-pop-dark1: hsl(from var(--clr-pop) h s calc(l - 10));
+  --clr-select-dark1: hsl(from var(--clr-select) h s calc(l - 10));
+  --clr-light-dark1: hsl(from var(--clr-light) h s calc(l - 10));
+
+  --clr-brand-light1: hsl(from var(--clr-brand) h s calc(l + 10));
+  --clr-pop-light1: hsl(from var(--clr-pop) h s calc(l + 10));
+  --clr-select-light1: hsl(from var(--clr-select) h s calc(l + 10));
+  --clr-light-light1: hsl(from var(--clr-light) h s calc(l + 10));
+
+  /* --clr-brand-background: hsl(from var(--clr-brand) h s calc(l + 20)); */
+  --clr-select-hover: hsl(from var(--clr-select) h s calc(l + 50));
+  --clr-pop-hover: hsl(from var(--clr-pop) h s calc(l + 20));
+}
+
+/* ============================================================================================================================!!!!!!!!!!==========GENRAL===== */
+body {
+  /* background-color: var(--clr-light); */
+  background-color: var(--clr-brand-background);
+
+  font-family: inter, sans-serif;
+  font-size: 1.125rem;
+  color: var(--clr-dark);
+
+  /* margin: 1rem 4rem 4rem 2rem; */
+  margin: 0;
+}
+
+/* =============================================================================================================================================== TEXTS ===== */
+/* ========================= GENERAL ========================= */
+
+h1 {
+  font-weight: normal;
+  color: var(--clr-brand);
+
+  margin: 4rem 0 0.5rem 2rem;
+}
+
+h2 {
+  color: var(--clr-brand);
+  margin: 0 0 0.1rem 0;
+  /* padding-left: 2rem; */
+}
+
+h3 {
+  color: var(--clr-brand);
+  margin: 0;
+  /* margin-top: 5rem; */
+}
+
+h4 {
+  font-weight: bold;
+
+  color: var(--clr-brand);
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
+.p-info {
+  font-weight: lighter;
+  margin: 0;
+  padding: 0.5rem 0 2rem 2rem;
+}
+
+.chap-content .p-info {
+  padding-left: 0;
+}
+
+.chap-sub .p-info {
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.p-warning {
+  font-style: italic;
+  padding: 0.5rem 0 0 0;
+}
+
+.p-iat-title {
+  margin: 1rem 0 0.5rem 0;
+}
+
+.chap-iat-wrap .p-info {
+  margin: 0;
+}
+
+/* ========================= INPUT ========================= */
+/* ===== inp-rule ===== */
+.p-rule-symbol {
+  font-weight: lighter;
+  color: var(--clr-dark-light1);
+}
+
+/* ===== inp-note ===== */
+.note-editor h3 {
+  color: var(--clr-brand);
+
+  margin-top: 1rem;
+}
+
+.note-editor h4 {
+  color: var(--clr-brand);
+
+  margin-top: 0.75rem;
+}
+
+.note-popup .p-info {
+  margin-bottom: 2rem;
+}
+
+/* ========================= ORDER ========================= */
+.p-draggable,
+.p-available-title,
+.p-used-title {
+  border-radius: 0.75rem;
+  white-space: nowrap;
+  background: none;
+}
+
+.p-draggable {
+  transition:
+    background-color 0.15s ease,
+    transform 0.15s ease,
+    opacity 0.15s ease;
+
+  user-select: none;
+}
+
+.p-available,
+.p-available-title {
+  padding: 0.25rem 0.5rem;
+}
+
+.p-used,
+.p-used-title {
+  padding: 0.5rem 1rem;
+}
+
+.p-available {
+  cursor: pointer;
+  background-color: var(--clr-light);
+  border: 0.07rem solid var(--clr-light-dark1);
+}
+
+.p-used {
+  cursor: grab;
+  /* font-weight: bold; */
+  background-color: var(--clr-select);
+  color: var(--clr-light);
+}
+.p-used:active {
+  cursor: grabbing;
+}
+
+.p-available:hover,
+.p-used:hover {
+  transform: translateY(-2px);
+}
+
+.dragging {
+  opacity: 0.85;
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.p-fixed {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  border: 0.1rem solid var(--clr-select);
+  font-weight: normal;
+  cursor: default;
+}
+
+/* ============================================================================================================================================= BUTTONS ===== */
+/* ========================= GENERAL ========================= */
+.btn {
+  background-color: var(--clr-light);
+  border-radius: 0.75rem;
+  font-family: inter, sans-serif;
+  font-size: 1rem;
+  color: var(--clr-dark);
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.1s ease;
+}
+.btn:hover {
+  background-color: var(--clr-light-dark1);
+  transform: scale(1.05);
+}
+
+.btn-main {
+  border: 0.07rem solid var(--clr-light-dark1);
+  padding: 1rem 0.5rem;
+}
+
+.btn-select:hover {
+  background-color: var(--clr-select-hover);
+}
+.btn-select.selected {
+  background-color: var(--clr-select);
+  color: var(--clr-light);
+  border-color: transparent;
+}
+.btn-select.selected:hover {
+  background-color: var(--clr-select-dark1);
+}
+
+.popup-select:hover {
+  background-color: var(--clr-select-hover);
+}
+.popup-select.selected {
+  background-color: var(--clr-select);
+  color: var(--clr-light);
+  border-color: transparent;
+}
+.popup-select.selected:hover {
+  background-color: var(--clr-select-dark1);
+}
+
+.btn-edit:hover {
+  background-color: var(--clr-pop-hover);
+}
+
+.btn-edit.btn-active {
+  background-color: var(--clr-pop);
+}
+
+.btn-inp,
+.btn-tab {
+  border: 0.07rem solid var(--clr-light-dark1);
+  padding: 0.75rem 0.5rem;
+}
+
+.btn-add:hover {
+  background-color: var(--clr-pop-hover);
+}
+
+.btn-save-project {
+  background-color: #ffc745;
+}
+
+.btn-save-project.is-saved {
+  background-color: var(--clr-select);
+  color: var(--clr-light);
+}
+
+/* ========================= NAV ========================= */
+.btn-nav-toggle {
+  padding: 0.5rem;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 0.625rem;
+  border: none;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  background-color: transparent;
+  color: var(--clr-dark-light1);
+
+  font-size: 1rem;
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    transform 0.15s ease;
+}
+.btn-nav-toggle:hover {
+  background-color: var(--clr-pop-hover);
+  transform: scale(1.05);
+}
+
+.language-options .btn-nav-language {
+  padding: 0.5rem 1rem;
+
+  border: none;
+  border-radius: 0.625rem;
+
+  background-color: transparent;
+  color: var(--clr-dark-light1);
+
+  font-size: 1rem;
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    transform 0.15s ease;
+}
+.language-options .btn-nav-language:hover {
+  background-color: var(--clr-pop-hover);
+  transform: scale(1.03);
+}
+
+.btn-nav-lock {
+  width: 100%;
+  padding: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  /* background: red; */
+  color: var(--clr-dark-light1);
+
+  border-radius: 0.625rem;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    transform 0.15s ease;
+
+  /* margin-top: auto; */
+  margin-bottom: 1.75rem;
+}
+.btn-nav-lock:hover {
+  background-color: var(--clr-brand-dark1);
+  transform: scale(1.05);
+}
+
+/* ========================= OPTIONS ========================= */
+.btn-opt {
+  border: 0.07rem solid var(--clr-light-dark1);
+  padding: 0.25rem 0.5rem;
+}
+
+.iat-options[data-edit-mode="true"] .btn-edit {
+  background-color: var(--clr-pop);
+}
+
+.iat-options[data-edit-mode="true"] .btn-opt:not(.user-created):not(.btn-edit) {
+  color: var(--clr-dark-light1);
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.ord-used[data-edit-mode="true"] .p-used:not(.user-created) {
+  color: var(--clr-dark-light1);
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-icon {
+  position: absolute;
+  height: 80%;
+  right: 0.5rem;
+  top: 10%;
+
+  padding: 0.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: none;
+  border: none;
+}
+.btn-icon:hover {
+  color: var(--clr-brand-dark1);
+  background: none;
+}
+
+/* ===== opt-single ===== */
+.iat-options.opt-single .btn-opt {
+  border: none;
+}
+
+/* ========================= INPUT ========================= */
+/* ===== inp-phoneme ===== */
+.phoneme-btn {
+  display: flex;
+  gap: 0.25rem;
+}
+
+/* ===== inp-rule ===== */
+.btn-reorder,
+.btn-delete {
+  display: none;
+}
+
+.btn-delete {
+  width: 1rem;
+
+  padding: 0.5rem;
+  font-size: 0.5rem;
+
+  line-height: 0.75rem;
+
+  border: 0.07rem solid var(--clr-pop);
+  background: transparent;
+}
+
+.rule.dragging .btn-reorder {
+  background-color: var(--clr-pop-hover);
+  border-color: var(--clr-pop);
+  color: var(--clr-dark);
+}
+
+.inp-rule.editing .btn-reorder,
+.inp-rule.editing .btn-delete {
+  display: inline-flex;
+}
+.inp-rule.editing .btn-reorder:hover,
+.inp-rule.editing .btn-delete:hover {
+  background-color: transparent;
+}
+
+.btn-inp {
+  border-color: transparent;
+}
+
+/* ===== inp-note ===== */
+.btn-note {
+  border: none;
+  padding: 0.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.4rem;
+  color: var(--clr-brand);
+  background-color: transparent;
+}
+.btn-note-close {
+  position: absolute;
+
+  top: 1rem;
+  right: 1rem;
+
+  border: none;
+
+  background: transparent;
+
+  font-size: 1rem;
+}
+
+.btn-note-tool {
+  border: 0.07rem solid var(--clr-light-dark1);
+  padding: 0.5rem 0.75rem;
+}
+
+.btn-bold {
+  margin-left: 2rem;
+}
+
+/* ========================= OTHER ========================= */
+/* for general, but also when running something in it's usually place leeds to styling problems */
+.btn-opt.delete-mode {
+  border: 1px solid #d64545;
+}
+.btn-opt.delete-mode:hover,
+.btn-opt.delete-mode:hover {
+  background-color: #ffecec;
+  transform: scale(1.05);
+  color: var(--clr-dark);
+}
+
+/* ======================================================================================================================================== INPUT FIELDS ===== */
+/* ========================= GENERAL ========================= */
+.iat-inputfield {
+  background-color: var(--clr-light);
+  border: 0.07rem solid var(--clr-light-dark1);
+  border-radius: 0.75rem;
+  outline: none;
+
+  font-family: inter, sans-serif;
+  font-size: 1rem;
+  color: var(--clr-dark);
+
+  padding: 0.75rem 0.5rem;
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+.iat-inputfield:focus:not(.iat-input.inp-popup .iat-inputfield) {
+  border: 0.1rem solid var(--clr-pop);
+}
+
+.inputfield-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.iat-options .inputfield-icon {
+  flex-shrink: 0;
+}
+
+/* ========================= OPTIONS ========================= */
+.opt-inputfield {
+  min-width: 10rem;
+  max-width: 10rem;
+
+  padding: 0.25rem 0.5rem;
+  height: auto;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+/* ========================= INPUT ========================= */
+/* ===== inp-phoneme ===== */
+.iat-input.inp-phoneme .iat-inputfield {
+  min-width: 2rem;
+  text-align: center;
+}
+
+.phoneme-item.delete-mode .iat-inputfield {
+  border-color: #d64545;
+  caret-color: transparent;
+
+  user-select: none;
+}
+.phoneme-item.delete-mode .iat-inputfield::selection {
+  background: transparent;
+}
+.phoneme-item.delete-mode:hover .iat-inputfield {
+  background-color: #ffecec;
+}
+
+/* ===== inp-rule ===== */
+.rule.dragging .iat-inputfield {
+  background-color: var(--clr-pop-hover);
+  transition: background-color 0.15s ease;
+}
+
+.rule.delete-hover .iat-inputfield {
+  background-color: #ffecec;
+  transition: background-color 0.15s ease;
+}
+
+.iat-input.inp-rule .iat-inputfield {
+  min-width: 2rem;
+  flex-grow: 1;
+}
+
+.rule input:read-only {
+  pointer-events: none;
+  border-color: transparent;
+  opacity: 0.5;
+}
+.iat-input.inp-rule.editing .rule input::selection {
+  background: transparent;
+}
+
+/* ===== inp-popup ===== */
+.inp-popup .iat-inputfield {
+  padding-right: 2rem;
+}
+.inp-popup .iat-inputfield:focus {
+  background: none;
+}
+
+/* ===== inp-info ===== */
+.inp-info .iat-inputfield {
+  width: 100%;
+  line-height: 1.2;
+  overflow: hidden;
+  resize: none;
+}
+
+/* ================================================================================================================================================ DIVS ===== */
+/* ========================= GENERAL ========================= */
+.page-settings {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+
+  display: flex;
+  gap: 1rem;
+
+  background-color: var(--clr-brand-background);
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  /* border-bottom: 2px solid var(--clr-brand-background); */
+}
+
+.btn-settings {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.mode-toggle {
+  /* padding: 0.5rem; */
+  /* background-color: red; */
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+.page-content {
+  flex: 1;
+  min-width: 0;
+
+  margin: 0 2rem 2rem 3.5rem;
+}
+
+.chap-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  padding-left: 2rem;
+}
+
+/* .chap-content {
+  border-top: 2px solid var(--clr-brand);
+  background-color: var(--clr-light);
+  border-radius: 0 0 1rem 1rem;
+  padding: 0 2rem 2rem 2rem;
+  width: 100%;
+}*/
+
+.chap-content {
+  background-color: var(--clr-light);
+  border-top: 2px solid var(--clr-brand);
+
+  margin: 0 -2rem 0 0;
+  padding: 0 2rem 4rem 2rem;
+}
+
+.chap-sub {
+  margin: 5rem 0 0 0;
+}
+
+.chap-iat {
+  margin: 2rem 0 0 0;
+}
+
+.chap-iat-inner {
+  margin: 0.5rem 0 0 0;
+}
+
+.chap-iat-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ========================= NAV ========================= */
+/* nav element */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  width: 2.5rem;
+  flex-shrink: 0;
+
+  height: 100vh;
+
+  background-color: var(--clr-light);
+  /* border-radius: 0 0.75rem 0.75rem 0; */
+  border-right: 2px solid var(--clr-brand-background);
+
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.5rem, 1vh, 1rem);
+
+  overflow: hidden;
+
+  /* padding: 0.5rem; */
+  padding: 0.5rem 0.5rem 0rem 0.5rem;
+  z-index: 1000;
+
+  overflow-y: auto;
+  scrollbar-width: none;
+
+  transition: width 0.2s ease;
+}
+
+.sidebar.open {
+  width: 8rem;
+}
+
+.sidebar.open .nav-label,
+.sidebar.open .toggle-label {
+  display: inline;
+  margin-left: 0.75rem;
+}
+/* !! remove this to activate scrolling */
+.sidebar::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.sidebar-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  margin-bottom: auto;
+}
+
+.sidebar-divider {
+  width: 80%;
+  height: 1px;
+
+  background-color: hsl(from var(--clr-brand) h s calc(l + 20));
+
+  margin: clamp(0.25rem, 0.6vh, 0.5rem) auto;
+}
+
+.sidebar-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.mode-toggle,
+.language-toggle {
+  display: flex;
+  /* width: 100%; */
+  box-sizing: border-box;
+}
+
+.language-toggle {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.language-options {
+  display: none;
+
+  flex-direction: column;
+  gap: 0.25rem;
+
+  margin-top: 0.25rem;
+  padding-left: 0.5rem;
+}
+.sidebar.open .language-toggle:hover .language-options {
+  display: flex;
+}
+
+/* ========================= OPTIONS ========================= */
+.iat-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* ===== opt-single ===== */
+.iat-options.opt-single {
+  border: 0.07rem solid var(--clr-light-dark1);
+  border-radius: 0.95rem;
+  padding: 0.25rem;
+  width: fit-content;
+}
+
+/* ===== opt-multi ===== */
+.iat-options.opt-multi {
+  width: fit-content;
+}
+
+/* ========================= INPUT ========================= */
+
+/* ===== inp-phoneme ===== */
+.phoneme-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* ===== inp-rule ===== */
+.rule {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.125rem;
+  border: 0.1rem solid transparent;
+  border-radius: 0.75rem;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.rule.delete-hover {
+  border-color: #d64545;
+}
+
+/* ===== inp-note ===== */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(0.3rem);
+
+  z-index: 5000;
+}
+
+.popup-overlay.hidden {
+  display: none;
+}
+
+body.popup-window-open {
+  overflow: hidden;
+}
+
+.card-columns {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.popup-window {
+  position: relative;
+
+  width: 80vw;
+  height: 80vh;
+
+  background-color: var(--clr-light);
+
+  border-radius: 1rem;
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.note-toolbar {
+  display: flex;
+  gap: 0.5rem;
+
+  margin: 1rem;
+  margin-bottom: 0;
+}
+
+.note-editor {
+  flex-grow: 1;
+
+  /* width: 90%; */
+
+  margin: 0 auto;
+
+  padding: 1rem;
+  margin: 1rem;
+
+  overflow-y: auto;
+
+  border: 0.07rem solid var(--clr-light-dark1);
+  border-radius: 0.75rem;
+
+  outline: none;
+
+  background-color: var(--clr-light);
+
+  line-height: 1.5;
+}
+.note-editor:empty::before {
+  content: "Enter notes...";
+  color: #999;
+}
+
+/* ========================= TABLE ========================= */
+.ord-available,
+.ord-used {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ===================================================================================================================================== TABLE ELEMENTS  ===== */
+/* ========================= TABLE ========================= */
+.tab-iat {
+  border-collapse: separate;
+  border-spacing: 1rem 0.5rem;
+  margin-left: -1rem;
+}
+
+.tab-iat th {
+  background-color: #dfdee0;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+.tab-iat thead th:first-child {
+  visibility: hidden;
+}
+
+.iat-table {
+  overflow-x: auto;
+  padding-bottom: 0.75rem;
+  --scrollbar-active: 0;
+}
+.iat-table:hover {
+  --scrollbar-active: 1;
+}
+.iat-table::-webkit-scrollbar {
+  height: 0.125rem;
+}
+.iat-table::-webkit-scrollbar-track {
+  background: transparent;
+}
+.iat-table::-webkit-scrollbar-thumb {
+  background-color: var(--clr-brand);
+
+  border-radius: 0.75rem;
+  transition: background-color 20.2s ease;
+}
+
+/* ===== tab-select ===== */
+.tab-iat td .select-td-wrap {
+  width: 100%;
+  display: inline-block;
+}
+.tab-iat td .select-td-wrap > * {
+  width: 100%;
+}
+
+/* ===== tab-double ===== */
+.double-td-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ============================================================================================================================================== OTHER  ===== */
+/* ========================= NAV ========================= */
+/* img, a href, span */
+.nav-item.home img {
+  width: 1rem;
+  object-fit: contain;
+}
+
+.nav-item {
+  padding: 0.5rem;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 0.625rem;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  color: var(--clr-dark-light1);
+  text-decoration: none;
+
+  font-size: 1.125rem;
+
+  transition:
+    background-color 0.15s ease,
+    transform 0.15s ease;
+}
+.nav-item:hover {
+  background-color: var(--clr-pop-hover);
+  transform: scale(1.05);
+}
+.nav-item.current-page {
+  background-color: var(--clr-pop);
+  color: var(--clr-brand);
+}
+
+.nav-label,
+.toggle-label {
+  margin-left: 0.75rem;
+  display: none;
+}
+
+.nav-label {
+  font-size: 1rem;
+}
+
+.sidebar.open .nav-label {
+  transform: translateX(0);
+}
+
+.word-card {
+  background-color: var(--clr-pop);
+}
+
+/* ============================================================================================================================================== COLLAPSE  ===== */
+
+/* MAIN CHAPTER */
+/* remove * symbol to remove the chap-content border and padding */
+.chap.collapsed > .chap-content * {
+  display: none;
+}
+
+/* remove if * symbola above is removed */
+.chap.collapsed .chap-content {
+  padding: 0.25rem;
+}
+
+/* SUB CHAPTER */
+.chap-sub.collapsed > :not(h3) {
+  display: none;
+}
+
+.chap h2,
+.chap-sub h3 {
+  cursor: pointer;
+}
