@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- ========================================================================================================================================== NAV ===== -->
+  <div class="layout">
+    <nav class="sidebar">
+      <div class="sidebar-main">
+        <a href="index.html" class="nav-item home">
+          <img src="../images/Logo.png" alt="Logo" />
+          <span class="nav-label">Home</span>
+        </a>
+
+        <a href="pages/phonology.html" class="nav-item">
+          <i class="fa-solid fa-microphone"></i>
+          <span class="nav-label">Phonology</span>
+        </a>
+
+        <a href="pages/grammar.html" class="nav-item">
+          <i class="fa-solid fa-cube"></i>
+          <span class="nav-label">Grammar</span>
+        </a>
+
+        <a href="pages/morphology.html" class="nav-item">
+          <i class="fa-solid fa-ellipsis"></i>
+          <span class="nav-label">Morphology</span>
+        </a>
+
+        <a href="pages/syntax.html" class="nav-item">
+          <i class="fa-solid fa-list-ol"></i>
+          <span class="nav-label">Syntax</span>
+        </a>
+
+        <a href="pages/evolution.html" class="nav-item">
+          <i class="fa-solid fa-timeline"></i>
+          <span class="nav-label">Evolution</span>
+        </a>
+
+        <a href="pages/phrases.html" class="nav-item">
+          <i class="fa-solid fa-comment-dots"></i>
+          <span class="nav-label">Phrases</span>
+        </a>
+
+        <a href="pages/dictionary.html" class="nav-item">
+          <i class="fa-solid fa-book-atlas"></i>
+          <span class="nav-label">Dictionary</span>
+        </a>
+
+        <a href="pages/sentences.html" class="nav-item">
+          <i class="fa-solid fa-align-center"></i>
+          <span class="nav-label">Sentences</span>
+        </a>
+
+
+
+        <a href="pages/testpage.html" class="nav-item">
+          <i class="">TP</i>
+          <span class="nav-label">Testpage</span>
+        </a>
+      </div>
+
+      <!-- ========================= SUB NAV ========================= -->
+
+      <button class="btn-nav-lock" title="Sidebar mode">
+        <i class="fa-solid fa-lock-open"></i>
+      </button>
+    </nav>
+
+    <div class="page-settings">
+      <button class="btn btn-main btn-settings" style="background-color: #ffc745;" data-action="save-project">
+        Save
+      </button>
+
+      <button class="btn btn-main btn-settings btn-language-switch">Language A</button>
+      <button class="btn btn-main btn-settings btn-stage-switch">Modern</button>
+
+      <div class="mode-toggle" data-state="edit">
+        <button class="btn-nav-toggle">
+          <i class="fa-solid fa-pencil"></i>
+        </button>
+      </div>
+
+      <div class="mode-toggle" data-state="down">
+        <button class="btn-nav-toggle">
+          <!-- <i class="fa-solid fa-angle-up"></i> -->
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+      </div>
+
+      <div class="mode-toggle">
+        <a href="pages/settings.html" class="nav-item">
+          <i class="fa-solid fa-gear"></i>
+          <span class="nav-label">Settings</span>
+        </a>
+      </div>
+    </div>
+
+    <main class="page-content">
+      <!-- ================================================================================================================================= MAIN-CONTENT ===== -->
+      <h1>Home</h1>
+      <p class="p-info">Page description here.</p>
+
+      <!-- ===================================================================================================================== CHAPTER 1 - sound system ===== -->
+      <div class="chap">
+        <div class="chap-title">
+          <h2>Chap title</h2>
+          <div class="iat-input inp-note">
+            <button class="btn btn-note">
+              <i class="fa-regular fa-note-sticky"></i>
+            </button>
+
+            <div class="popup-overlay hidden">
+              <div class="popup-window note-popup">
+                <button class="btn btn-note-close">✕</button>
+
+                <h2 class="note-title"></h2>
+
+                <p class="p-info">Write your notes about chapter 1.</p>
+
+                <div class="note-toolbar">
+                  <button class="btn btn-note-tool btn-h3">h1</button>
+                  <button class="btn btn-note-tool btn-h4">h2</button>
+                  <button class="btn btn-note-tool btn-p">p</button>
+
+                  <button class="btn btn-note-tool btn-bold">
+                    <b>B</b>
+                  </button>
+                  <button class="btn btn-note-tool btn-italic">
+                    <i>I</i>
+                  </button>
+                  <button class="btn btn-note-tool btn-underline">
+                    <u>U</u>
+                  </button>
+                </div>
+
+                <div class="note-editor" contenteditable="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ========================= CHAP-CONTENT ========================= -->
+        <div class="chap-content">
+          <!-- ========================= SUB CHAP ========================= -->
+          <div class="chap-sub">
+            <!-- ========== CHAP IAT ========== -->
+            <div class="chap-iat">
+              <p class="p-iat-title">Use articles</p>
+              <div class="iat-options opt-single">
+                <button class="btn btn-opt btn-select selected">Off</button>
+                <button class="btn btn-opt btn-select">On</button>
+
+                <button class="btn btn-close btn-opt">&lt;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========================= CHAP-CONTENT ========================= -->
+      <div class="chap-content">
+        <!-- ========================= SUB CHAP ========================= -->
+        <div class="chap-sub">
+          <!-- ========== CHAP IAT's ========== -->
+        </div>
+      </div>
+  </div>
+  </div>
+
+
+  <script src="../js/appData.js"></script>
+  <script src="../js/appState.js"></script>
+  <script src="../js/dataAccess.js"></script>
+  <script src="../js/dataSync.js"></script>
+
+  <script src="../js/projectSave.js"></script>
+
+  <script src="../js/dataInitialization.js"></script>
+
+  <script src="../js/nav.js"></script>
+  </main>
+  </div>
+</body>
+
+</html>
